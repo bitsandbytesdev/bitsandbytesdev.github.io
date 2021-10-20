@@ -62,7 +62,7 @@ body, html {
 @media only screen and (max-width: 1600px) {
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     background-attachment: scroll;
-    min-height: 400px;
+    min-height: 200px;
   }
 }
 </style>
@@ -110,8 +110,8 @@ body, html {
 
 <!-- Second Parallax Image with How it Works Text -->
 <div class="bgimg-2 display-container opacity-min">
-  <div class="display-middle">
-    <span class="xxlarge text-white wide">HOW IT WORKS</span>
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="left padding-large black xlarge wide animate-opacity">HOW IT WORKS</span>
   </div>
 </div>
 
@@ -135,10 +135,10 @@ body, html {
 
 </div>
     
-<!-- Third Parallax Image with How it Works Text -->
+<!-- Third Parallax Image with FAQs Text -->
 <div class="bgimg-3 display-container opacity-min">
-  <div class="display-middle">
-    <span class="xxlarge text-white wide">FAQs</span>
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="left padding-large black xlarge wide animate-opacity">FAQs</span>
   </div>
 </div>
 
@@ -216,8 +216,8 @@ body, html {
 
 <!-- Fourth Parallax Image with Themes Text -->
 <div class="bgimg-4 display-container opacity-min">
-  <div class="display-middle">
-    <span class="xxlarge text-white wide">THEMES</span>
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="left padding-large black xlarge wide animate-opacity">THEMES</span>
   </div>
 </div>
 
@@ -228,37 +228,37 @@ body, html {
 
   <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="row-padding center">
-  <!-- Testing section -->
-  <section class="columns-desktop">
-      <div class="theme">
-          <img src="/images/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur" />
-      </div>
-      <div class="theme">
-          <img src="/images/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween" />
-      </div>
-      <div class="theme">
-        <img src="/images/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night" />
-      </div>
-      <div class="theme">
-          <img src="/images/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth" />
-      </div>
-  </section>
-  <section class="columns-desktop">
-    <div class="theme">
-      <img src="/images/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night" />
-    </div>
-    <div class="theme">
-        <img src="/images/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth" />
-    </div>
-</section>
-</div>
-<!-- end testing section -->
+    <!-- Testing section -->
+      <section class="columns-desktop">
+          <div class="theme">
+              <img src="/images/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur" />
+          </div>
+          <div class="theme">
+              <img src="/images/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween" />
+          </div>
+          <div class="theme">
+            <img src="/images/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night" />
+          </div>
+          <div class="theme">
+              <img src="/images/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth" />
+          </div>
+      </section>
+      <section class="columns-desktop">
+        <div class="theme">
+          <img src="/images/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night" />
+        </div>
+        <div class="theme">
+            <img src="/images/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth" />
+        </div>
+    </section>
+  </div>
+  <!-- end testing section -->
 
 
 
 
 
-      <div class="col m3">
+  <!--       <div class="col m3">
       <img src="/images/movie-night.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Movie night">
     </div>
 
@@ -273,10 +273,10 @@ body, html {
     <div class="col m3">
       <img src="/images/sweet-tooth.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth">
     </div>
-  </div>
+  </div> -->
 
-<!--   <div class="row-padding center section">
-    <div class="col m3">
+  <div class="row-padding center section">
+    <!--   <div class="col m3">
       <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="hover-opacity" alt="Placeholder image 1">
     </div>
 
@@ -306,8 +306,8 @@ body, html {
 
 <!-- Fifth Parallax Image with Themes Text -->
 <div class="bgimg-5 display-container opacity-min">
-  <div class="display-middle">
-     <span class="xxlarge text-white wide">CONTACT</span>
+  <div class="display-middle" style="white-space:nowrap;">
+    <span class="left padding-large black xlarge wide animate-opacity">CONTACT</span>
   </div>
 </div>
 
@@ -317,7 +317,7 @@ body, html {
   <p class="center"><em>We'd love your feedback!</em></p>
 
   <div class="row padding-32 section">
-    <div class="col m4 container">
+    <div class="col m4 container center">
       <img src="./images/map-service-area.jpg" class="image round" onclick="onClick(this)" alt="Service Srea" style="width:100%">
       <br>
       <div class="center">
@@ -328,7 +328,7 @@ body, html {
       <div class="large margin-bottom">
         <i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i> Collingwood Ontario, CA<br>
         <i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i> Phone: 705.441.2296<br>
-        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i>Email: <a href="mailto:thelittleslumberpartyco@outlook.com?subject=Interested%20%in%a%Slumber%20%Party">thelittleslumberpartyco@outlook.com</a> <br>
+        <i class="fa fa-envelope fa-fw hover-text-black xlarge margin-right"></i>Email: <a href="mailto:thelittleslumberpartyco@outlook.com?subject=Interested%20in%20a%20Slumber%20Party" class="small">thelittleslumberpartyco@outlook.com</a> <br>
       </div>
       <!-- <p>Swing by for a cup of <i class="fa fa-coffee"></i>leave us a note:</p> -->
       <p>leave us a note:</p>
