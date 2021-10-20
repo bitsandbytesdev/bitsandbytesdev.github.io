@@ -44,7 +44,19 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
 .btn.disabled:hover,.btn:disabled:hover{box-shadow:none}
 .badge,.tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.badge{border-radius:50%}
-.ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ul li:last-child{border-bottom:none}
+.ul{
+    list-style-type:none;
+    padding:0;
+    margin:0
+}
+.ul li{
+    padding:8px 16px; 
+    border-bottom:1px solid #ddd
+}
+.ul li:last-child{
+    border-bottom:none
+}
+
 .tooltip,.display-container{position:relative}.tooltip .text{display:none}.tooltip:hover .text{display:inline-block}
 .ripple:active{opacity:0.5}.ripple{transition:opacity 0s}
 .input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
@@ -238,8 +250,20 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .border-pale-red,.hover-border-pale-red:hover{border-color:#ffe7e7!important}.border-pale-green,.hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .border-pale-yellow,.hover-border-pale-yellow:hover{border-color:#ffffcc!important}.border-pale-blue,.hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
+.how-it-works{
+    display: flex; 
+    justify-content: center; 
+    padding: 0;
+}
 
-/* Themes */
+div.center ul{
+    display: inline-block; 
+    list-style-type: none;
+    text-align: initial;
+    padding: 0;
+/*     width: 25%;
+    margin: auto; */
+}
 
 .columns-desktop {
     display: flex;
