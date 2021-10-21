@@ -102,6 +102,11 @@ body,h1,h2,h3,h4,h5,h6 {
     {
       font-size:12px!important;
     }
+
+    .row-padding>.half
+    {
+      padding:5px 8px
+    }
   }
 
 /* Reset large screen main logo */
@@ -324,17 +329,15 @@ body,h1,h2,h3,h4,h5,h6 {
           </div>
           <p>or leave us a note:</p>
           <form action="/action_page.php" target="_blank">
-            <div class="row-padding" style="margin:0 -16px 8px -16px">
+            <div class="row-padding" style="margin:0 -16px 5px -16px">
               <div class="half">
                 <input class="input border" type="text" placeholder="Name" required name="Name">
               </div>
               <div class="half">
                 <input class="input border" type="text" placeholder="Email" required name="Email">
               </div>
-              <div class="half">
-                <input class="input border" type="text" placeholder="Message" required name="Message">
-              </div>
             </div>
+            <input class="input border" type="text" placeholder="Message" required name="Message">
             <button class="button black right section" type="submit">
               <i class="fa fa-paper-plane"></i> SEND MESSAGE
             </button>
