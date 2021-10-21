@@ -257,23 +257,27 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 
 /* Themes */
-.columns-desktop {
+.columns-themes {
     display: flex;
+
 }
 
 .theme {
 width: 100%;
-padding: 5px;
-margin: 5px;
+padding: 2px;
+/* margin: 5px; */
 /* background-color: #fff;
 border: solid 1px #ccc; */
 }
 
 .theme img {
 width: 100%;
+height: 100%;
+object-fit: cover;
+
 }
 
-.theme .title {
+/* .theme .title {
 font-weight: bold;
 }
 
@@ -287,4 +291,4 @@ text-align: right;
 
 .theme .columns div {
 width: 50%;
-}
+} */
