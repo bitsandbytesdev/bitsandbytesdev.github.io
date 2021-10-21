@@ -175,7 +175,7 @@ body,h1,h2,h3,h4,h5,h6 {
       </div>
 
     <!-- Container (About Section) -->
-    <div class="content container padding-16" id="about">
+    <div class="content container padding-sections" id="about">
       <h3 class="center">ABOUT US</h3>
       <p class="center"><em>We love slumber parties</em></p>
       <p>As a mother of two busy little girls, I can appreciate the hustle bustle of everyday life and all the aspects that go with it – party planning being one of them. Why not let us take care of the details so you can focus on the fun.</p>
@@ -189,7 +189,7 @@ body,h1,h2,h3,h4,h5,h6 {
     </div>
 
     <!-- Container (How It Works Section) -->
-    <div class="content container padding-16" id="howitworks">
+    <div class="content container padding-sections" id="howitworks">
       <h3 class="center"><em>It's quite simple...</em></h3>
 
       <!-- leaving this next line as an example -->
@@ -217,7 +217,7 @@ body,h1,h2,h3,h4,h5,h6 {
     </div>
 
     <!-- Container (FAQ Section) -->
-    <div class="content container padding-16" id="faq">
+    <div class="content container padding-sections" id="faq">
       <p class="center"></p>
         <p><h4><em><u>How long to setup?</u></em></h4></p>
         <p>The Little Slumber Party takes between 1.5 hour (2 teepees) and 2.5 hours (5 teepees) to setup. Plus/Minus if we must travel to the car multiple times.
@@ -245,73 +245,65 @@ body,h1,h2,h3,h4,h5,h6 {
     </div>
 
     <!-- Container (Themes Section) -->
-    <div class="content container padding-16" id="themes">
-      <p class="center"><em>Below are some of our current themes<br> Click on the images to make them bigger</em></p><br>
+    <div class="content container padding-sections" id="themes">
+      <p class="center" style="margin-bottom:0px;"><em>Below are some of our current themes<br> Click on the images to make them bigger</em></p><br>
 
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-      <div class="row-padding center">
+      <div class="gallery-grid">
         <!-- Testing section -->
-        <section class="columns-themes">
-            <div class="theme">
-              <img src="/images/themes/dinosaur/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-            </div>
-            <div class="theme">
-              <img src="/images/themes/dinosaur/dinosaur-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-            </div>
-            <div class="theme">
-              <img src="/images/themes/dinosaur/dinosaur-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-            </div>
-            <div class="theme">
-              <img src="/images/themes/dinosaur/dinosaur-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-            </div>
-        </section>
-        <section class="columns-themes">
-            <div class="theme">
-              <img src="/images/themes/halloween/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-            </div>
-            <div class="theme">
-              <img src="/images/themes/halloween/halloween-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-            </div>
-            <div class="theme">
-              <img src="/images/themes/halloween/halloween-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-            </div>
-            <div class="theme">
-              <img src="/images/themes/halloween/halloween-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-            </div>
-        </section>
-        <section class="columns-themes">
-          <div class="theme">
-            <img src="/images/themes/movienight/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-          </div>
-          <div class="theme">
-            <img src="/images/themes/movienight/movie-night-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-          </div>
-          <div class="theme">
-            <img src="/images/themes/movienight/movie-night-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-          </div>
-          <div class="theme">
-            <img src="/images/themes/movienight/movie-night-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-          </div>
-        </section>
-        <section class="columns-themes">
-          <div class="theme">
-            <img src="/images/themes/sweettooth/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-          </div>
-          <div class="theme">
-            <img src="/images/themes/sweettooth/sweet-tooth-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-          </div>
-          <div class="theme">
-            <img src="/images/themes/sweettooth/sweet-tooth-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-          </div>
-          <div class="theme">
-            <img src="/images/themes/sweettooth/sweet-tooth-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-          </div>
-        </section>
+        <div class="gallery-item">
+          <img src="/images/themes/dinosaur/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/dinosaur/dinosaur-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/dinosaur/dinosaur-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/dinosaur/dinosaur-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/halloween/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/halloween/halloween-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/halloween/halloween-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/halloween/halloween-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/movienight/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/movienight/movie-night-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/movienight/movie-night-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/movienight/movie-night-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/sweettooth/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/sweettooth/sweet-tooth-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/sweettooth/sweet-tooth-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/sweettooth/sweet-tooth-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
+        </div>
       </div>
-      <!-- end testing section -->
-      <div class="row-padding center section">
+      <!-- KEEP THIS Load more button can be used in future -->
+<!--       <div class="row-padding center section">
         <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
-      </div>
+      </div> -->
     </div>
 
     <!-- Modal for full size images on click-->
@@ -331,7 +323,7 @@ body,h1,h2,h3,h4,h5,h6 {
     </div>
 
     <!-- Container (Service Area Section) -->
-    <div class="content container padding-16" id="service-area">
+    <div class="content container padding-sections" id="service-area">
       <p class="center"><em>We provide service to the follow locations and surrounding areas:</em></p>
           <ul class="ul-center-center">
             <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Collingwood</li>
@@ -352,7 +344,7 @@ body,h1,h2,h3,h4,h5,h6 {
     </div>
 
     <!-- Container (Booking Inquiries Section) -->
-    <div class="content container padding-16" id="bookinginquiries">
+    <div class="content container padding-sections" id="bookinginquiries">
       <p class="center"><em>We'd love to hear from you!</em></p>
           <div class="booking-inquiries-section margin-bottom">
             <ul class="ul-center-center">
