@@ -64,59 +64,73 @@ body,h1,h2,h3,h4,h5,h6 {
 /* might need to change the line here to be "max-width" instead of "max-device-width" */
 @media only screen and (max-width: 1600px) 
 {
-  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
-    background-attachment: scroll;
-    min-height: 30vw; /*200px;*/
-  }
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 
+    {
+      background-attachment: scroll;
+      min-height: 30vw; /*200px;*/
+    }
 
-  .span-logo
-  {
-    display: flex;
-    flex-flow: row;
-    white-space: nowrap;
-    float:left!important;
-    padding:12px 12px!important;
-    color:#fff!important;
-    background-color:#000!important;
-    font-size: 3vw!important;
-    /* font-size:18px!important; */
-    letter-spacing:4px;
-    animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
+    .span-logo
+    {
+      display: flex;
+      flex-flow: row;
+      white-space: nowrap;
+      float:left!important;
+      padding:12px 12px!important;
+      color:#fff!important;
+      background-color:#000!important;
+      font-size: 3vw!important;
+      /* font-size:18px!important; */
+      letter-spacing:4px;
+      animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
+    }
+
+    body, html 
+    {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+      font-size: 4vw;
+    }
+
+    h4
+    {
+      font-size: 5.5vw;
+    }
+
+    .booking-inquiries-section 
+    {
+      font-size:12px!important;
+    }
   }
-  body, html{
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-  font-size: 4vw;
-  }
-  h4{
-  font-size: 5.5vw;
-}
-}
 
 /* Reset large screen main logo */
-@media only screen and (min-width: 1601px) {
-  .span-logo{
-    display: flex;
-    flex-flow: row;
-    white-space: nowrap;
-    float:left!important;
-    padding:12px 24px!important;
-    color:#fff!important;
-    background-color:#000!important;
-    font-size:24px!important;
-    letter-spacing:4px;
-    animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
-  }
-  body, html{
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-  font-size: 1vw;
-  }
-  h4{
-  font-size: 1.5vw;
-}
+@media only screen and (min-width: 1601px) 
+{
+    .span-logo
+    {
+      display: flex;
+      flex-flow: row;
+      white-space: nowrap;
+      float:left!important;
+      padding:12px 24px!important;
+      color:#fff!important;
+      background-color:#000!important;
+      font-size:24px!important;
+      letter-spacing:4px;
+      animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
+    }
+    body, html
+    {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+      font-size: 1vw;
+    }
+    h4
+    {
+      font-size: 1.5vw;
+    }
 }
 
 </style>
@@ -301,7 +315,7 @@ body,h1,h2,h3,h4,h5,h6 {
     <!-- Container (Booking Inquiries Section) -->
     <div class="content container padding-16" id="bookinginquiries">
       <p class="center"><em>We'd love to hear from you!</em></p>
-          <div class="large margin-bottom">
+          <div class="booking-inquiries-section margin-bottom">
             <ul class="ul-center-center">
               <li><i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i>Collingwood Ontario, CA</li>
               <li><i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i>Phone: 705.441.2296</li>
