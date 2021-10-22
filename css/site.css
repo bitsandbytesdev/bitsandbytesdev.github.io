@@ -282,14 +282,14 @@ object-fit: cover;
 
 .span-logo
 {
-  display: flex;
-  flex-flow: row;
+  /* display: flex;
+  flex-flow: row; */
   white-space: nowrap;
   float:left!important;
   padding:12px 24px!important;
   color:#fff!important;
   background-color:#000!important;
-/*   font-size: inherit; */
+  /* font-size: inherit; */
   font-size: 3vw!important;
   /* font-size:24px!important; */
   letter-spacing:4px;

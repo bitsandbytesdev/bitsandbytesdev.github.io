@@ -9,6 +9,8 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {
   font-family: "Lato", sans-serif;
+  /* dynamic fluid auto sizing text (change last value i.e: 1.1em to change output size) */
+  font-size: clamp(1em, 1em + 2vw, 1.1em);
 }
 
 /* Create a Parallax Effect */
@@ -68,11 +70,13 @@ body {
 
 }
 
+/* Add a black background color to the top navigation */
 .topnav {
-  overflow: hidden;
   background-color: white;
+  overflow: hidden;
 }
 
+/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
@@ -80,33 +84,34 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-  padding:8px 16px;width:auto;border:none;display:block;outline:0;
+  /* font-size: 17px; */
+  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
+/*   padding:8px 16px;width:auto;border:none;display:block;outline:0;
   border:none;padding:8px 16px;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap;
   color:#fff!important;background-color:#000!important;
   opacity:0.85;
-  color:#000!important;background-color:#fff!important;
+  color:#000!important;background-color:#fff!important; */
   
 }
 
+/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: white;
 }
 
+/* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #04AA6D;
   color: black;
-
-
-
 }
-
+/* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
+/* When the screen is less than 1204 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1220px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -114,7 +119,8 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1220px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -127,19 +133,20 @@ body {
     text-align: left;
   }
 }
+
 </style>
   <body>
     <!-- Navbar (sit on top) -->
      <div class="topnav" id="myNavbar">
-        <a href="#home" class="bar-item button hover-black opacity-min active"><i class="fa fa-home hide-small margin-right-navbar" aria-hidden="true"></i>HOME</a>
-        <a href="#about" class="bar-item button hide-small hide-medium hover-black opacity-min"><i class="fa fa-user margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
-        <a href="#howitworks" class="bar-item button hide-small hide-medium hover-black opacity-min"><i class="fa fa-expand margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
-        <a href="#faq" class="bar-item button hide-small hide-medium hover-black opacity-min"><i class="fa fa-question-circle margin-right-navbar" aria-hidden="true"></i> FAQ</a>
-        <a href="#themes" class="bar-item button hide-small hide-medium hover-black opacity-min"><i class="fa fa-th margin-right-navbar" aria-hidden="true"></i> THEMES</a>
-        <a href="#service-area" class="bar-item button hide-small hide-medium hover-black opacity-min"><i class="fa fa-map-marker margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
-        <a href="#bookinginquiries" class="bar-item button hide-small hide-medium hover-black opacity-min"><i class="fa fa-envelope margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
-      </div>
+        <a href="#home" class="active hover-black"><i class="fa fa-home hide-small margin-right-navbar" aria-hidden="true"></i>HOME</a>
+        <a href="#about" class="hover-black"><i class="fa fa-user margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
+        <a href="#howitworks" class="hover-black"><i class="fa fa-expand margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
+        <a href="#faq" class="hover-black"><i class="fa fa-question-circle margin-right-navbar" aria-hidden="true"></i> FAQ</a>
+        <a href="#themes" class="hover-black"><i class="fa fa-th margin-right-navbar" aria-hidden="true"></i> THEMES</a>
+        <a href="#service-area" class="hover-black"><i class="fa fa-map-marker margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
+        <a href="#bookinginquiries" class="hover-black"><i class="fa fa-envelope margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </div>
 
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 display-container opacity-min" id="home">
@@ -151,9 +158,17 @@ body {
 
     <!-- Container (About Section) -->
     <div class="content container padding-sections" id="about">
-      <h3 class="center">ABOUT US</h3>
-      <p class="center"><em>We love slumber parties</em></p>
-      <p>As a mother of two busy little girls, I can appreciate the hustle bustle of everyday life and all the aspects that go with it – party planning being one of them. Why not let us take care of the details so you can focus on the fun.</p>
+      <h3 class="center">
+        ABOUT US
+      </h3>
+      <p class="center">
+        <em>
+          We love slumber parties
+        </em>
+      </p>
+      <p>
+        As a mother of two busy little girls, I can appreciate the hustle bustle of everyday life and all the aspects that go with it – party planning being one of them. Why not let us take care of the details so you can focus on the fun.
+      </p>
     </div>
 
     <!-- Second Parallax Image with How it Works Text -->
@@ -165,23 +180,37 @@ body {
 
     <!-- Container (How It Works Section) -->
     <div class="content container padding-sections" id="howitworks">
-      <h3 class="center"><em>It's quite simple...</em></h3>
+      <h3 class="center">
+        <em>
+          It's quite simple...
+        </em>
+      </h3>
 
       <!-- leaving this next line as an example -->
       <!-- <p class="center"><em>It's quite simple...</em></p> -->
-      <ol style="display: table; list-style-type: 1; padding: 0; margin-top: 15px; margin-left: auto; margin-right: auto; margin-bottom: 36px;">
+      <ol style="display: table;padding: 0; margin-top: 15px; margin-left: auto; margin-right: auto; margin-bottom: 36px;">
         <li>Pick a Date</li>
         <li>Pick a Package</li>
-        <li><i style="font-weight: bold;">Party!</i></li>
+        <li>
+          <i style="font-weight: bold;">
+            Party!
+          </i>
+        </li>
       </ol>
 
-      <p><h4><em>Before your Little Slumber Party</em></h4></p>
-      <p>Please have your slumber party space clear before we arrive. If there is furniture to be moved, please do so in advance of our arrival. Little Slumber Party will not be available to assist with moving furniture. If we arrive and the space is unavailable for setup additional fees may apply.
+      <h4>
+        <em>
+          <u>
+            Before your Little Slumber Party
+          </u>
+        </em>
+      </h4>
+      <p>
+        Please have your slumber party space clear before we arrive. If there is furniture to be moved, please do so in advance of our arrival. Little Slumber Party will not be available to assist with moving furniture. If we arrive and the space is unavailable for setup additional fees may apply.
         One teepee setup is approximately 5 feet deep x 5 feet wide (with tray on mattress) if the tray is placed on the floor setup is closer to 6 feet deep x 5 feet wide. 
         Basements or living rooms are a great place to support a little slumber party. Clients have noticed that once furniture is moved out of the way, these areas make for a great location to setup birthday parties, play dates and slumber parties. 
       </p>
       <br>
-
     </div>
         
     <!-- Third Parallax Image with FAQs Text -->
@@ -193,22 +222,51 @@ body {
 
     <!-- Container (FAQ Section) -->
     <div class="content container padding-sections" id="faq">
-      <p class="center"></p>
-        <p><h4><em><u>How long to setup?</u></em></h4></p>
-        <p>The Little Slumber Party takes between 1.5 hour (2 teepees) and 2.5 hours (5 teepees) to setup. Plus/Minus if we must travel to the car multiple times.
+      <p class="center">
+        <h4>
+          <em>
+            <u>
+              How long to setup?
+            </u>
+          </em>
+        </h4>
+        <p>
+          The Little Slumber Party takes between 1.5 hour (2 teepees) and 2.5 hours (5 teepees) to setup. Plus/Minus if we must travel to the car multiple times.
           Take down is much quicker – normally 45 mins to 1.5 hours depending on the setup accessories. 
         </p>
         <br>
     
-        <p><h4><em><u>Are animals allowed?</u></em></h4></p>
-        <p>No thank you. I’m sure your little friend would love to slumber party with you, but to help us keep the integrity of the teepees we ask that your pet sleeps in his/her bed. Their claws may puncture the mattress or rip the fabrics and transfer pet hair and dander.</p>
+        <h4>
+          <em>
+            <u>
+              Are animals allowed?
+            </u>
+          </em>
+        </h4>
+        <p>
+          No thank you. I’m sure your little friend would love to slumber party with you, but to help us keep the integrity of the teepees we ask that your pet sleeps in his/her bed. Their claws may puncture the mattress or rip the fabrics and transfer pet hair and dander.
+        </p>
         <br>
 
-        <p><h4><em><u>What are the Slumber Party Rules?</u></em></h4></p>
-        <p><em><b>Our Number One Rule is Have Fun!</b></em> &nbsp; But of course, there are a few others...
+        <h4>
+          <em>
+            <u>
+              What are the Slumber Party Rules?
+            </u>
+          </em>
+        </h4>
+        <br>
+          <em>
+            <b>
+              Our Number One Rule is Have Fun!
+            </b>
+          </em>
+          &nbsp; But of course, there are a few others...
           We love our teepees so please take care of them! We ask that you treat our teepees and equipment like it was your own. With that being said, we ask that you keep sharp objects (badges, jewelry, etc.) away from our teepees & air mattresses to avoid punctures. Damage to the Teepee/Mattress will result in additional charges.
-        <p>Understand that children will eat snacks in the teepee and on the provided trays however we ask that food that can stain and ruin the teepee/linen/plush items be avoided (Pizza, Spaghetti, Dorito Chips, Grape Juice etc.) The tray table can always be moved to an alternative area where the children can enjoy their snacks without worry about damage to the teepee/linen/plush. We recommend refraining from using items such as face paint, party poppers. Confetti, silly string or nail polish around the teepees/linen/plush items – these items are incredibly hard to remove and will result in additional charges if damage occurs.</p> 
-      </p>
+        <p>
+          Understand that children will eat snacks in the teepee and on the provided trays however we ask that food that can stain and ruin the teepee/linen/plush items be avoided (Pizza, Spaghetti, Dorito Chips, Grape Juice etc.) The tray table can always be moved to an alternative area where the children can enjoy their snacks without worry about damage to the teepee/linen/plush. We recommend refraining from using items such as face paint, party poppers. Confetti, silly string or nail polish around the teepees/linen/plush items – these items are incredibly hard to remove and will result in additional charges if damage occurs.
+        </p> 
+
       <br>
     </div>
 
@@ -384,11 +442,15 @@ body {
               x.className = x.className.replace(" show", "");
           }
       } */
-      function myFunction() {
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
   var x = document.getElementById("myNavbar");
-  if (x.className === "topnav") {
+  if (x.className === "topnav") 
+  {
     x.className += " responsive";
-  } else {
+  } 
+  else 
+  {
     x.className = "topnav";
   }
 }
