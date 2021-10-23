@@ -132,9 +132,10 @@ body,h1,h2,h3,h4,h5,h6 {
     background-attachment: scroll;
     min-height: 200px;
       }
-  .topnav.responsive 
+  .topnav.responsive.show 
   {
     position: relative;
+    display:block!important
 
   }
   .topnav.responsive .icon 
@@ -151,20 +152,21 @@ body,h1,h2,h3,h4,h5,h6 {
     text-align: left;
     
   }
+  .hide-small{display:none!important}
 }
 
 </style>
   <body>
     <!-- Navbar (sit on top) -->
      <div class="topnav" id="myNavbar">
-        <a href="#home" class="active hover-black"><i class="fa fa-home hide-small margin-right-navbar" aria-hidden="true"></i>HOME</a>
-        <a href="#about" class="hover-black"><i class="fa fa-user margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
-        <a href="#howitworks" class="hover-black"><i class="fa fa-expand margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
-        <a href="#faq" class="hover-black"><i class="fa fa-question-circle margin-right-navbar" aria-hidden="true"></i> FAQ</a>
-        <a href="#themes" class="hover-black"><i class="fa fa-th margin-right-navbar" aria-hidden="true"></i> THEMES</a>
-        <a href="#service-area" class="hover-black"><i class="fa fa-map-marker margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
-        <a href="#bookinginquiries" class="hover-black"><i class="fa fa-envelope margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <a href="#home" class="active hover-black" onclick="homeHideMenu()"><i class="fa fa-home hide-small margin-right-navbar" aria-hidden="true"></i>HOME</a>
+        <a href="#about" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-user hide-small margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
+        <a href="#howitworks" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-expand hide-small margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
+        <a href="#faq" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-question-circle hide-small margin-right-navbar" aria-hidden="true"></i> FAQ</a>
+        <a href="#themes" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-th hide-small margin-right-navbar" aria-hidden="true"></i> THEMES</a>
+        <a href="#service-area" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-map-marker hide-small margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
+        <a href="#bookinginquiries" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-envelope hide-small margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()"><i class="fa fa-bars hover-black"></i></a>
     </div>
 
       <!-- First Parallax Image with Logo Text -->
@@ -472,18 +474,31 @@ body,h1,h2,h3,h4,h5,h6 {
               x.className = x.className.replace(" show", "");
           }
       } */
+
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-      function myFunction() 
+      function hamburgerMenu() 
       {
         var x = document.getElementById("myNavbar");
-        if (x.className === "topnav") 
-        {
-          x.className += " responsive";
-        } 
-        else 
-        {
-          x.className = "topnav";
-        }
+
+          if (x.className.indexOf("show") == -1)
+          {
+            x.classList.add("responsive");
+            x.classList.add("show");
+          } 
+          else 
+          {
+            x.className = x.className.replace(" responsive show", "");
+          }
+      }
+
+      function homeHideMenu()
+      {
+        var x = document.getElementById("myNavbar");
+        var y = document.getElementById("myNavbar").firstChild.nextSibling;
+          if (y.className.indexOf("active") !== -1)
+          {
+            x.className = x.className.replace("topnav responsive show", "topnav");
+          }
       }
     </script>
   </body>
