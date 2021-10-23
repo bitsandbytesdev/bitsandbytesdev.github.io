@@ -164,7 +164,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
         background-color:#000!important;
         font-size: 3vw!important;
         letter-spacing:4px;
-        animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
+        animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}        
       }
 
       #middle-input-box
@@ -232,7 +232,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     <!-- Second Parallax Image with How it Works Text -->
     <div class="bgimg-2 display-container opacity-min">
       <div class="display-middle" style="white-space:nowrap;">
-        <span class="left padding-large black animate-opacity span-logo">HOW IT WORKS</span>
+        <span class="left padding-large black animate-opacity span-logo wide">HOW IT WORKS</span>
       </div>
     </div>
 
@@ -274,7 +274,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     <!-- Third Parallax Image with FAQs Text -->
     <div class="bgimg-3 display-container opacity-min">
       <div class="display-middle" style="white-space:nowrap;">
-        <span class="left padding-large black animate-opacity span-logo">FAQs</span>
+        <span class="left padding-large black animate-opacity span-logo wide">FAQs</span>
       </div>
     </div>
 
@@ -333,7 +333,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     <!-- Fourth Parallax Image with Themes Text -->
     <div class="bgimg-4 display-container opacity-min">
       <div class="display-middle" style="white-space:nowrap;">
-        <span class="left padding-large black animate-opacity span-logo">THEMES</span>
+        <span class="left padding-large black animate-opacity span-logo wide">THEMES</span>
       </div>
     </div>
 
@@ -411,7 +411,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     <!-- Fifth Parallax Image with Service Area Text -->
     <div class="bgimg-5 display-container opacity-min">
       <div class="display-middle" style="white-space:nowrap;">
-        <span class="left padding-large black animate-opacity span-logo">SERVICE AREA</span>
+        <span class="left padding-large black animate-opacity span-logo wide">SERVICE AREA</span>
       </div>
     </div>
 
@@ -432,7 +432,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     <!-- Sixth Parallax Image with Booking Inquiries Text -->
     <div class="bgimg-6 display-container opacity-min">
       <div class="display-middle" style="white-space:nowrap;">
-        <span class="left padding-large black animate-opacity span-logo">BOOKING INQUIRIES</span>
+        <span class="left padding-large black animate-opacity span-logo wide">BOOKING INQUIRIES</span>
       </div>
     </div>
 
@@ -457,7 +457,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
               </div>
             </div>
             <input class="input border" type="text" placeholder="Message" required name="Message">
-            <button class="button black right section" type="submit">
+            <button class="button black right section opacity-min" type="submit">
               <i class="fa fa-paper-plane"></i> SEND MESSAGE
             </button>
           </form>
@@ -483,12 +483,12 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
       }
 
     // Change style of navbar on scroll
-    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    // When the user scrolls down 1px (original was 20px) from the top of the document, slide down the navbar
     // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
     window.onscroll = function() {scrollFunction()};
       function scrollFunction() 
       {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
           document.getElementById("myNavbar").style.top = "0";
         } else {
           document.getElementById("myNavbar").style.top = "-50px";
