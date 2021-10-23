@@ -212,12 +212,22 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
 
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 display-container opacity-min" id="home">
+      <!-- scroll down logo animation -->
+        <div class="mouse_scroll display-bottommiddle mouse-logo-fade-in" id="scroll-down-logo">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="m_scroll_arrows unu"></span>
+            <span class="m_scroll_arrows doi"></span>
+            <span class="m_scroll_arrows trei"></span>
+          </div>
+        </div>
         <div class="display-middle" style="white-space:normal;">
           <span class="span-logo-title">THE LITTLE SLUMBER PARTY CO</span>
           <!-- <span class="left padding-large black xlarge wide animate-opacity">THE <span>LITTLE SLUMBER PARTY CO</span></span> -->
         </div>
       </div>
-
     <!-- Container (About Section) -->
     <div class="content container padding-sections" id="about">
       <h3 class="center">
@@ -489,13 +499,20 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     // Change style of navbar on scroll
     // When the user scrolls down 1px (original was 20px) from the top of the document, slide down the navbar
     // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
+    // also remove scroll down icon
     window.onscroll = function() {scrollFunction()};
       function scrollFunction() 
       {
+        x = document.getElementById("scroll-down-logo")
         if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
           document.getElementById("myNavbar").style.top = "0";
+          x.classList.add("mouse-logo-fade-out");
+          // x.style = "display:none";
         } else {
           document.getElementById("myNavbar").style.top = "-50px";
+          x.style = x.style.replace = "";
+          x.classList.remove("mouse-logo-fade-out");
+          x.classList.add("mouse-logo-fade-in");
         }
       }
 /*       window.onscroll = function() {scrollFunction()};
