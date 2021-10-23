@@ -166,6 +166,30 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
         letter-spacing:4px;
         animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
       }
+
+      #middle-input-box
+      {
+        margin-top: 0;
+        font:inherit;
+        padding:8px;
+        display:block;
+        border:none;
+        border-bottom:1px solid #ccc;
+        width:100%
+      }
+}
+
+@media screen and (max-width: 600px) {
+  #middle-input-box
+      {
+        margin-top: 5px;
+        font:inherit;
+        padding:8px;
+        display:block;
+        border:none;
+        border-bottom:1px solid #ccc;
+        width:100%
+      }
 }
 
 </style>
@@ -289,7 +313,8 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
             </u>
           </em>
         </h4>
-        <br>
+        
+        <p>
           <em>
             <b>
               Our Number One Rule is Have Fun!
@@ -297,6 +322,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
           </em>
           &nbsp; But of course, there are a few others...
           We love our teepees so please take care of them! We ask that you treat our teepees and equipment like it was your own. With that being said, we ask that you keep sharp objects (badges, jewelry, etc.) away from our teepees & air mattresses to avoid punctures. Damage to the Teepee/Mattress will result in additional charges.
+        </p>
         <p>
           Understand that children will eat snacks in the teepee and on the provided trays however we ask that food that can stain and ruin the teepee/linen/plush items be avoided (Pizza, Spaghetti, Dorito Chips, Grape Juice etc.) The tray table can always be moved to an alternative area where the children can enjoy their snacks without worry about damage to the teepee/linen/plush. We recommend refraining from using items such as face paint, party poppers. Confetti, silly string or nail polish around the teepees/linen/plush items – these items are incredibly hard to remove and will result in additional charges if damage occurs.
         </p> 
@@ -413,7 +439,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
     <!-- Container (Booking Inquiries Section) -->
     <div class="content container padding-sections" id="bookinginquiries">
       <p class="center"><em>We'd love to hear from you!</em></p>
-          <div class="booking-inquiries-section margin-bottom">
+          <div class="margin-bottom">
             <ul class="ul-center-center">
               <li><i class="fa fa-map-marker fa-fw hover-text-black xlarge margin-right"></i>Collingwood Ontario, CA</li>
               <li><i class="fa fa-phone fa-fw hover-text-black xlarge margin-right"></i>Phone: 705.441.2296</li>
@@ -427,7 +453,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
                 <input class="input border" type="text" placeholder="Name" required name="Name">
               </div>
               <div class="half">
-                <input class="input border" type="text" placeholder="Email" required name="Email">
+                <input class="input-box border" id="middle-input-box" type="text" placeholder="Email" required name="Email">
               </div>
             </div>
             <input class="input border" type="text" placeholder="Message" required name="Message">

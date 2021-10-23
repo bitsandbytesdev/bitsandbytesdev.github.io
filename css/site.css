@@ -255,10 +255,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin-bottom: 16px;
 }
 
-.booking-inquiries-section{
-    font-size:18px!important;
-}
-
 .padding-sections{
     padding-top: 16px;
     padding-bottom: 5%;
@@ -296,3 +292,13 @@ object-fit: cover;
   animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}
 }
 
+.input-box
+{
+    font:inherit;
+    margin:0;
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
