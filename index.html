@@ -15,10 +15,15 @@ body,h1,h2,h3,h4,h5,h6 {
   line-height: 1.8;
 }
 
+.hpot 
+  {
+    display: none;
+  }
+
 .span-logo
-{
-  font-size: 2.5vw!important;
-}
+  {
+    font-size: 2.5vw!important;
+  }
 
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
@@ -484,13 +489,17 @@ body,h1,h2,h3,h4,h5,h6 {
             </ul>
           </div>
           or leave us a note:
-          <form action="/action_page.php" target="_blank">
+          <form action="https://formspree.io/thelittleslumberpartyco@outlook.com" method="POST">
             <div class="row-padding" style="margin:0 -16px 5px -16px">
+              <!-- Honeypot field (will be hidden by default DO NOT DELETE) -->
+              <div class="hpot">
+                <label>Leave this field empty: <input name="_gotcha"></label>
+              </div>
               <div class="half">
                 <input class="input border" type="text" placeholder="Name" required name="Name">
               </div>
               <div class="half">
-                <input class="input-box border" id="middle-input-box" type="text" placeholder="Email" required name="Email">
+                <input class="input-box border" id="middle-input-box" type="text" placeholder="Email" required name="Email" name="_replyto">
               </div>
             </div>
             <input class="input border" type="text" placeholder="Message" required name="Message">
