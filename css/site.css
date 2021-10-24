@@ -107,7 +107,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
 .display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
-.display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-bottommiddle{position:absolute;left:50%;bottom:15%;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .display-container:hover .display-hover{display:block}.display-container:hover span.display-hover{display:inline-block}.display-hover{display:none}
 .display-position{position:absolute}
 .circle{border-radius:50%}
@@ -383,7 +383,7 @@ object-fit: cover;
 }
 
 .mouse {
-  height: 42px;
+  height: 37px;
   width: 24px;
   border-radius: 14px;
   transform: none;
@@ -481,12 +481,12 @@ object-fit: cover;
 {
 visibility: visible;
 opacity: 1;
-transition: opacity .5s linear;
+transition: opacity 1s linear;
 }
 /* Fade-Out Effect */
 .mouse-logo-fade-out
 {
 visibility: hidden;
 opacity: 0;
-transition: visibility 0s .5s, opacity .5s linear;
+transition: visibility 0s 1s, opacity 1s linear;
 }
