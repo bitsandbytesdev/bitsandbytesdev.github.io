@@ -7,12 +7,17 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6, .span-logo {
+body,h1,h2,h3,h4,h5,h6 {
   font-family: "Lato", sans-serif;
   /* dynamic fluid auto sizing text (change last value i.e: 1.1em to change output size) */
   font-size: clamp(1em, 1em + 2vw, 1.1em);
   color: #777;
   line-height: 1.8;
+}
+
+.span-logo
+{
+  font-size: 2.5vw!important;
 }
 
 /* Create a Parallax Effect */
@@ -112,7 +117,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
   display: none;
 }
 
-/* When the screen is less than 1204 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+/* When the screen is less than 896 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 896px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -129,6 +134,12 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
         background-attachment: scroll;
         min-height: 200px;
       }
+
+    .span-logo
+      {
+        font-size: 2.5vw!important;
+      }
+
     .topnav.responsive.show 
       {
         position: relative;
@@ -179,6 +190,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
       }
 }
 
+/* change email link size and spacing of form fields on mobile devices */
 @media screen and (max-width: 600px) {
   #middle-input-box
     {
@@ -190,11 +202,22 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
       border-bottom:1px solid #ccc;
       width:100%
     }
-  #bookinginquiries > div > ul > li:nth-child(3) > a
+
+  #bookinginquiries > div > ul > li:nth-child(3) > a  /* change the text size for the email link only on small screens */
     {
       font-size:12px!important
     }
 }
+
+/* Turn off parallax scrolling for tablets (iPad Pro) */
+@media screen and (max-width: 1024px) 
+  {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 
+      {
+        background-attachment: scroll;
+        min-height: 200px;
+      }
+  }
 
 </style>
   <body>
@@ -478,7 +501,7 @@ body,h1,h2,h3,h4,h5,h6, .span-logo {
         </div>
 
     <!-- Footer -->
-    <footer class="center black padding-24 opacity hover-opacity-off">
+    <footer class="center black opacity" style="padding-top:16px;padding-bottom:1px;">
       <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
       <div class="xlarge section">
         <a href="https://www.facebook.com/The-Little-Slumber-Party-Co-104208258653968" target="_blank"><i class="fa fa-facebook-official hover-opacity" ></i></a>
