@@ -558,8 +558,8 @@ div:hover{
                  0 0 0 #ffffff inset; */
   }
   100% {
-    width: 140px;
-    height: 120px;
+    width: 260px;
+    height: 60px;
     background: #fafafa;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),
                 0 2px 10px 0 rgba(0,0,0,0.12);
