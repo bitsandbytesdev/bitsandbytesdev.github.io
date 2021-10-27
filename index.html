@@ -82,7 +82,7 @@ body,h1,h2,h3,h4,h5,h6 {
   top: -50px; /* Hide the navbar 50 px outside of the top view */
   width: 100%; /* Full width */
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  z-index: 999999; /* Ensure the navbar stays on top of everything */
+  z-index: 5; /* Ensure the navbar stays on top of everything */
   box-shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
 }
 
@@ -156,7 +156,7 @@ body,h1,h2,h3,h4,h5,h6 {
         position: absolute;
         right: 0;
         top: 0;
-        z-index: 999999; /* Ensure the navbar stays on top of everything */
+        z-index: 5; /* Ensure the navbar stays on top of everything */
       }
 
     .topnav.responsive a 
@@ -238,8 +238,24 @@ body,h1,h2,h3,h4,h5,h6 {
         <a href="javascript:void(0);" class="icon hover-black" onclick="hamburgerMenu()"><i class="fa fa-bars"></i></a>
     </div>
 
+
+            <!-- TEST SECTION -->
+            <div class="notification-container">
+              <div class="box" onclick="this.style.display='none'">
+                <p><b>Slumber Parties</b>
+                  <br>
+                  <em>Booking in November!</em></p>
+              </div>
+            </div>
+    
+            <!-- END TEST SECTION -->
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 display-container opacity-min" id="home">
+
+
+
+
+
       <!-- scroll down logo animation -->
         <div class="mouse_scroll display-bottommiddle mouse-logo-fade-in" id="scroll-down-logo">
           <div class="mouse">
