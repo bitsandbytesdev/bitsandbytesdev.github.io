@@ -2,10 +2,16 @@
 <html>
 <title>The Little Slumber Party Co.</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/site.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="./css/site.css"/>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="./css/alert.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css"/>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/scss/mixins/_grid.scss"/> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/scss/mixins/_grid-framework.scss"/> -->
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {
   font-family: "Lato", sans-serif;
@@ -76,7 +82,7 @@ body,h1,h2,h3,h4,h5,h6 {
 
 /* Add a black background color to the top navigation */
 #myNavbar {
-  background-color: #FFF; /* Black background color */
+  background-color: #FFF; /* White background color */
   color: #000;
   position: fixed; /* Make it stick/fixed */
   top: -50px; /* Hide the navbar 50 px outside of the top view */
@@ -227,34 +233,59 @@ body,h1,h2,h3,h4,h5,h6 {
 </style>
   <body>
     <!-- Navbar (sit on top) -->
-     <div class="topnav" id="myNavbar">
-        <a href="#home" class="active hover-black" onclick="homeHideMenu()"><i class="fa fa-home hide-small margin-right-navbar" aria-hidden="true"></i>HOME</a>
-        <a href="#about" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-user hide-small margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
-        <a href="#howitworks" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-expand hide-small margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
-        <a href="#faq" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-question-circle hide-small margin-right-navbar" aria-hidden="true"></i> FAQ</a>
-        <a href="#themes" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-th hide-small margin-right-navbar" aria-hidden="true"></i> THEMES</a>
-        <a href="#service-area" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-map-marker hide-small margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
-        <a href="#bookinginquiries" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-envelope hide-small margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
-        <a href="javascript:void(0);" class="icon hover-black" onclick="hamburgerMenu()"><i class="fa fa-bars"></i></a>
-    </div>
+      <div class="topnav" id="myNavbar">
+          <a href="#home" class="active hover-black" onclick="homeHideMenu()"><i class="fa fa-home hide-small margin-right-navbar" aria-hidden="true"></i>HOME</a>
+          <a href="#about" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-user hide-small margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
+          <a href="#howitworks" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-expand hide-small margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
+          <a href="#faq" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-question-circle hide-small margin-right-navbar" aria-hidden="true"></i> FAQ</a>
+          <a href="#themes" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-th hide-small margin-right-navbar" aria-hidden="true"></i> THEMES</a>
+          <a href="#service-area" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-map-marker hide-small margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
+          <a href="#bookinginquiries" class="hover-black" onclick="hamburgerMenu()"><i class="fa fa-envelope hide-small margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
+          <a href="javascript:void(0);" class="icon hover-black" onclick="hamburgerMenu()"><i class="fa fa-bars"></i></a>
+      </div>
 
 
             <!-- TEST SECTION -->
-            <div class="notification-container">
+            <!--<section>
+                <div class="square_box box_three"></div>
+              <div class="square_box box_four"></div>
+              <div class="container mt-5">
+                <div class="row">             
+                  <div class="col-sm-12">  -->
+                    <div class="alert fade alert-simple alert-info alert-dismissible">
+                      <i class="start-icon fa fa-info-circle faa-shake animated"></i>
+                      <strong class="font__weight-semibold">NEW: Christmas Theme!</strong><br>Booking in November.  Contact us for details!
+                      <button type="button" class="close" onclick="this.parentElement.style.display='none';">
+                        <span aria-hidden="true"><i class="fa fa-times blue-cross"></i></span>
+                        <span class="sr-only">Close</span>
+                      </button>
+                    </div>            
+<!--                  </div>            
+                 </div>
+              </div> 
+            </section> -->
+
+
+<!--             <div class="notif-container panel card-4">
+              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <b>Christmas Slumber Parties</b>
+              <br>
+              <em>Booking in November!</em>
+            </div> -->
+
+
+
+<!--             <div class="notification-container">
               <div class="box" onclick="this.style.display='none'">
                 <b>Christmas Slumber Parties</b>
                   <br>
                   <em>Booking in November!</em>
               </div>
-            </div>
+            </div> -->
     
             <!-- END TEST SECTION -->
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 display-container opacity-min" id="home">
-
-
-
-
 
       <!-- scroll down logo animation -->
         <div class="mouse_scroll display-bottommiddle mouse-logo-fade-in" id="scroll-down-logo">

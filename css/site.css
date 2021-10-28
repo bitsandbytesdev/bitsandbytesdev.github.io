@@ -491,14 +491,23 @@ opacity: 0;
 transition: visibility 0s 1s, opacity 1s linear;
 }
 
+
+
+
+
 /* TEST SECTION */
 .notification-container {
-
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+  z-index: 2;
+/*   position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%); */
 
   background: #f0f0f000;
   box-sizing: border-box;
@@ -507,7 +516,7 @@ transition: visibility 0s 1s, opacity 1s linear;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  z-index: 2;
+  /* z-index: 2; */
 }
 div:hover{
   animation-play-state: paused
@@ -569,4 +578,33 @@ div:hover{
 
 }
 /* 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) */
+
+.notif-container{
+position: absolute;
+top: 20%;
+left: 50%;
+transform: translate(-50%,-50%);
+-ms-transform: translate(-50%,-50%);
+z-index: 2;
+border-radius: 7px;
+background-color:#fff;
+opacity: .86;
+}
+
+.notif-container:hover{
+  opacity: 1;
+}
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.closebtn:hover {
+  color: black;
+}
 /* END TEST SECTION */
