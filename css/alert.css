@@ -5,6 +5,7 @@
   
 .blue-cross {
     padding-left: 0.75rem;
+    cursor: pointer;
   }
 
 .alert-dismissible .close {
