@@ -5,12 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <link rel="stylesheet" href="./css/site.css"/>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> -->
 <link rel="stylesheet" href="./css/alert.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css"/>
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/scss/mixins/_grid.scss"/> -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/scss/mixins/_grid-framework.scss"/> -->
 
 <style>
 body,h1,h2,h3,h4,h5,h6 {
@@ -218,6 +216,10 @@ body,h1,h2,h3,h4,h5,h6 {
     {
       font-size:12px!important
     }
+
+    .notification-container{
+      min-width: 90%;
+    }
 }
 
 /* Turn off parallax scrolling for tablets (iPad Pro) */
@@ -244,65 +246,20 @@ body,h1,h2,h3,h4,h5,h6 {
           <a href="javascript:void(0);" class="icon hover-black" onclick="hamburgerMenu()"><i class="fa fa-bars"></i></a>
       </div>
 
+      <!-- Notification Section -->
+      <div class="notification-container fade alert-simple alert-info alert-dismissible" id="notification">
+        <div class="notification-icon">
+          <i class="fas fa-info-circle fa-3x faa-shake animated"></i>
+        </div>
+        <div class="notification-content">
+            <p><strong class="font__weight-semibold">NEW: Christmas Theme!</strong></p>
+            <p>Booking in November. <a href="#bookinginquiries">Contact</a> us for details!</p>
+        </div>
+        <div class="notification-close">
+            <i class="fa fa-times blue-cross" aria-hidden="true" onclick="getElementById('notification').style.display='none';"></i>
+        </div>
+      </div>
 
-            <!-- TEST SECTION -->
-            <!--<section>
-                <div class="square_box box_three"></div>
-              <div class="square_box box_four"></div>
-              <div class="container mt-5">
-                <div class="row">             
-                  <div class="col-sm-12">  -->
-
-
-<!--                     <div class="alert fade alert-simple alert-info alert-dismissible">
-                      <i class="start-icon fa fa-info-circle faa-shake animated"></i>
-                      <strong class="font__weight-semibold">NEW: Christmas Theme!</strong>&nbsp;&nbsp; Booking in November. <a href="#bookinginquiries">Contact us</a> for details!
-                      <button type="button" class="close" onclick="this.parentElement.style.display='none';">
-                        <span aria-hidden="true"><i class="fa fa-times blue-cross"></i></span>
-                        <span class="sr-only">Close</span>
-                      </button>
-                    </div>     -->      
-                    
-                    
-<!--                  </div>            
-                 </div>
-              </div> 
-            </section> -->
-
-            <div class="parent alert fade alert-simple alert-info alert-dismissible">
-              <div class="div1">
-                <i class="start-icon fa fa-info-circle faa-shake animated"></i>
-              </div>
-              <div class="div2">
-                <span><strong class="font__weight-semibold">NEW: Christmas Theme!</strong>&nbsp;&nbsp; Booking in November. <a href="#bookinginquiries">Contact us</a> for details!</span>
-              </div>
-              <div class="div3">
-                <!-- <button type="button" class="close" onclick="this.parentElement.style.display='none';"> -->
-                  <i class="fa fa-times blue-cross" aria-hidden="true" onclick="this.parentElement.style.display='none';"></i>
-<!--                 <span aria-hidden="true"></span>
-                <span class="sr-only">Close</span> -->
-              </div>
-              </div>
-
-
-<!--             <div class="notif-container panel card-4">
-              <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
-              <b>Christmas Slumber Parties</b>
-              <br>
-              <em>Booking in November!</em>
-            </div> -->
-
-
-
-<!--             <div class="notification-container">
-              <div class="box" onclick="this.style.display='none'">
-                <b>Christmas Slumber Parties</b>
-                  <br>
-                  <em>Booking in November!</em>
-              </div>
-            </div> -->
-    
-            <!-- END TEST SECTION -->
       <!-- First Parallax Image with Logo Text -->
       <div class="bgimg-1 display-container opacity-min" id="home">
 
