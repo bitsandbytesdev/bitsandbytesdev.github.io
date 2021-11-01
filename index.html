@@ -570,12 +570,12 @@ body,h1,h2,h3,h4,h5,h6 {
       <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
       <div class="xlarge section">
         <a href="https://www.facebook.com/The-Little-Slumber-Party-Co-104208258653968" target="_blank"><i class="fab fa-facebook-square hover-opacity" ></i></a>
-        <a href="https://instagram.com/thelittleslumberpartyco?utm_medium=copy_link" target="_blank"><i class="fab fa-instagram hover-opacity"></i></a>
-        <i class="fab fa-pinterest-square hover-opacity"></i>
+        <a href="https://instagram.com/thelittleslumberpartyco" target="_blank"><i class="fab fa-instagram hover-opacity"></i></a>
+        <a href="https://www.pinterest.ca/thelittleslumberpartyco/" target="_blank"><i class="fab fa-pinterest-square hover-opacity"></i></a>
       </div>
-      <div>
-        © 2020-present The Little Slumber Party Co. All Rights Reserved.
-      </div>
+      <p style="text-align: left;">        
+        <small>© 2020-present The Little Slumber Party Co. All Rights Reserved.</small>
+      </p>
     </footer>
     
     <script>
@@ -590,7 +590,7 @@ body,h1,h2,h3,h4,h5,h6 {
     // Change style of navbar on scroll
     // When the user scrolls down 1px (original was 20px) from the top of the document, slide down the navbar
     // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
-    // also remove scroll down icon
+    // Also remove scroll down icon
     window.onscroll = function() {scrollFunction()};
       function scrollFunction() 
       {
@@ -606,25 +606,6 @@ body,h1,h2,h3,h4,h5,h6 {
           x.classList.add("mouse-logo-fade-in");
         }
       }
-/*       window.onscroll = function() {scrollFunction()};
-      function scrollFunction() {
-          var navbar = document.getElementById("myNavbar");
-          if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-              navbar.className = " responsive" + " bar" + " card" + " animate-top" + " white";
-          } else {
-              navbar.className = navbar.className.replace(" card animate-top white", "");
-          }
-      } */
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-/*       function toggleFunction() {
-          var x = document.getElementById("myNavbar");
-          if (x.className.indexOf("show") == -1) {
-              x.className += " show";
-          } else {
-              x.className = x.className.replace(" show", "");
-          }
-      } */
 
 /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
       function hamburgerMenu() 
@@ -652,10 +633,7 @@ body,h1,h2,h3,h4,h5,h6 {
           }
       }
 
-
-
-
-// test section
+// Snow functions
 function itsChristmas()
       {
         var s = document.getElementById("xmas");
@@ -667,7 +645,6 @@ function itsChristmas()
         {
           s.className = "xmasDefault";
         }
-          // s.className = (s.className == "xmasDefault") ? s.className.add("xmasDefault") : className.add("xmasOn");
       }
 
 (function() {
@@ -786,9 +763,7 @@ window.addEventListener("resize",function(){
 })
 
 init();
-// end test section
-
-
+// end snow section
     </script>
   </body>
 </html>
