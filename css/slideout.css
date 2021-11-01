@@ -1,5 +1,6 @@
 #slideout {
     /* position: absolute; */
+
     position: sticky;
     top: 100px;
     left: 0;
@@ -11,6 +12,7 @@
     z-index: 1;
 }
 #slideout_tab {
+    
     position: absolute;
     top: -50px;
     right: 0;
@@ -25,12 +27,13 @@
     border-radius: 0% 50% 50% 0% / 0% 50% 50% 0%;
 }
 #slideout_inner {
+    /* font-size: 1.1vw; */
     color: #af4e4c;
     position: absolute;
     top: -50px;
     right: 35px;
     background: #4caf4fd7;
-    width: 402px;
+    width: 350px;
     padding: 10px;
     height: auto;
     cursor:auto;
@@ -38,5 +41,5 @@
     -moz-border-radius: 0px 0px 5px 0px;
     border-radius: 0px 0px 5px 0px;
 }
-#showblock:checked + #slideout{left: 400px;}
+#showblock:checked + #slideout{left: 350px;}
 #showblock{display:none;}
