@@ -221,7 +221,7 @@ body,h1,h2,h3,h4,h5,h6 {
     }
 
     /* Change slideout size for tiny screens */
-    #showblock:checked + #slideout 
+    #showblock:not(:checked) + #slideout 
     {
       left: 250px;
     }
@@ -265,7 +265,7 @@ body,h1,h2,h3,h4,h5,h6 {
       </div>
 
 <!-- Slideout notification with snow effect -->
-      <canvas class="xmasDefault" id="xmas"></canvas>   
+      <canvas class="xmasOn" id="xmas"></canvas>   
       <input type="checkbox" id="showblock">
       <div id="slideout">
         <label id="slideout_tab" for="showblock" title="Notification Slider" onclick="itsChristmas()">
@@ -273,7 +273,7 @@ body,h1,h2,h3,h4,h5,h6 {
         </label>
         <div id="slideout_inner">
           <p><strong class="font__weight-semibold" >NEW: Christmas Theme!</strong><br>
-            Booking in November. <a href="#bookinginquiries">Contact us</a> for details!</p>
+            Booking now! <a href="#bookinginquiries">Contact us</a> for details!</p>
         </div>
       </div>
 

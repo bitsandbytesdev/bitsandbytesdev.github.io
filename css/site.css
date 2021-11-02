@@ -502,8 +502,8 @@ transition: visibility 0s 1s, opacity 1s linear;
   left: 0px;
   padding: 12px 6px 12px 0px;
   text-align: center;
-  background: #4caf4fd7;
-  color: #fff;
+  background: #fffdd0f1;
+  color: red;
   cursor:pointer;
   -webkit-border-radius: 0% 50% 50% 0% / 0% 50% 50% 0%;
   -moz-border-radius: 0% 50% 50% 0% / 0% 50% 50% 0%;
@@ -511,11 +511,12 @@ transition: visibility 0s 1s, opacity 1s linear;
 }
 #slideout_inner {
   /* font-size: 1.1vw; */
-  color: #af4e4c;
+  
+  color: #e6c300;
   position: absolute;
   top: -50px;
   right: 35px;
-  background: #4caf4fd7;
+  background: #fffdd0f1;
   width: 350px;
   padding: 10px;
   height: auto;
@@ -524,14 +525,15 @@ transition: visibility 0s 1s, opacity 1s linear;
   -moz-border-radius: 0px 0px 5px 0px;
   border-radius: 0px 0px 5px 0px;
 }
-#showblock:checked + #slideout{left: 350px;}
+#showblock:not(:checked) + #slideout{left: 350px;}
+/* 350px */
 #showblock{display:none;}
 
 /* End Slideout Section */
 
 /* Snow Effect */
 
-/* body{margin:0;height:100%;} */
+body{margin:0;height:100%;}
 #xmas {
   width: 100%;
 height: 100%;
