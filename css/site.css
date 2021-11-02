@@ -528,3 +528,22 @@ transition: visibility 0s 1s, opacity 1s linear;
 #showblock{display:none;}
 
 /* End Slideout Section */
+
+/* Snow Effect */
+
+/* body{margin:0;height:100%;} */
+#xmas {
+  width: 100%;
+height: 100%;
+position: absolute;
+z-index: 1;
+}
+
+.xmasOn {
+  display: "";
+}
+
+.xmasDefault {
+  display: none;
+} 
+/* End Snow Effect */
