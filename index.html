@@ -217,12 +217,13 @@ body,h1,h2,h3,h4,h5,h6 {
       border-bottom:1px solid #ccc;
       width:100%
     }
-
-  #bookinginquiries > div > ul > li:nth-child(3) > a  /* change the text size for the email link only on small screens */
+    /* change the text size for the email link only on small screens */
+  #bookinginquiries > div > ul > li:nth-child(3) > a  
     {
       font-size:12px!important
     }
 
+    /* Change slideout size for tiny screens */
     #showblock:checked + #slideout 
     {
       left: 250px;
@@ -231,7 +232,15 @@ body,h1,h2,h3,h4,h5,h6 {
     {
       width: 250px;
     }
-    
+
+    /* Change gallery grid size for tiny screens */
+    .gallery-grid 
+    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 25vw);
+    grid-gap: 1px;
+    }    
 }
 
 /* Turn off parallax scrolling for tablets (iPad Pro) */
@@ -431,7 +440,6 @@ body,h1,h2,h3,h4,h5,h6 {
 
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="gallery-grid">
-        <!-- Testing section -->
         <div class="gallery-item">
           <img src="/images/themes/dinosaur/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
         </div>
@@ -493,6 +501,7 @@ body,h1,h2,h3,h4,h5,h6 {
           <img src="/images/themes/christmas/christmas-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Christmas Theme" />
         </div>
       </div>
+
       <!-- *****KEEP THIS***** Load more button can be used in future -->
 <!--       <div class="row-padding center section">
         <button class="button padding-large light-grey" style="margin-top:64px">LOAD MORE</button>
@@ -519,13 +528,13 @@ body,h1,h2,h3,h4,h5,h6 {
     <div class="content container padding-sections" id="service-area">
       <p class="center"><em>We provide service to the follow locations and surrounding areas:</em></p>
           <ul class="ul-center-center">
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Collingwood</li>
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Wasaga Beach</li>
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Stayner</li>
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Creemore</li>
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Singhampton</li>
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Rob Roy</li>
-            <li><i class="fa fa-check-circle-o fa-fw hover-text-black"></i>Thornbury</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Collingwood</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Wasaga Beach</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Stayner</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Creemore</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Singhampton</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Rob Roy</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Thornbury</li>
           </ul>
     </div>
 

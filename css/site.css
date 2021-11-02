@@ -261,7 +261,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 25vw);
+    grid-template-rows: repeat(5, 15vw);
     grid-gap: 1px;
 }
 
