@@ -482,8 +482,6 @@ transition: visibility 0s 1s, opacity 1s linear;
 /* Slideout Section */
 
 #slideout {
-  /* position: absolute; */
-
   position: sticky;
   top: 100px;
   left: 0;
@@ -510,7 +508,6 @@ transition: visibility 0s 1s, opacity 1s linear;
   border-radius: 0% 50% 50% 0% / 0% 50% 50% 0%;
 }
 #slideout_inner {
-  /* font-size: 1.1vw; */
   
   color: #e6c300;
   position: absolute;
@@ -526,7 +523,6 @@ transition: visibility 0s 1s, opacity 1s linear;
   border-radius: 0px 0px 5px 0px;
 }
 #showblock:not(:checked) + #slideout{left: 350px;}
-/* 350px */
 #showblock{display:none;}
 
 /* End Slideout Section */
