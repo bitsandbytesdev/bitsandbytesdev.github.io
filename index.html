@@ -371,13 +371,16 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
     </footer>
     
     <script>
-    // Modal Image Gallery
+//#region Modal Image Gallery
       function onClick(element) {
         document.getElementById("img01").src = element.src;
         document.getElementById("modal01").style.display = "block";
         var captionText = document.getElementById("caption");
         captionText.innerHTML = element.alt;
       }
+//#endregion
+
+//#region mouse scrolling functions
 
     // Change style of navbar on scroll
     // When the user scrolls down 1px (original was 20px) from the top of the document, slide down the navbar
@@ -399,7 +402,10 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
         }
       }
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+//#endregion
+
+// #region Responsive Navbar
+// Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
       function hamburgerMenu() 
       {
         var x = document.getElementById("myNavbar");
@@ -424,8 +430,9 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
             x.className = x.className.replace("topnav responsive show", "topnav");
           }
       }
+// #endregion
 
-// Snow functions
+//#region Snow functions
 function itsChristmas()
       {
         var s = document.getElementById("xmas");
@@ -555,7 +562,7 @@ window.addEventListener("resize",function(){
 })
 
 init();
-// end snow section
+// #endregion
     </script>
   </body>
 </html>
