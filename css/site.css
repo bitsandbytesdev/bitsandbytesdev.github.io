@@ -31,7 +31,7 @@ h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-
 .serif{font-family:serif}.sans-serif{font-family:sans-serif}.cursive{font-family:cursive}.monospace{font-family:monospace}
 h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
-.image{max-width:75%;height:auto}img{vertical-align:middle}a{color:inherit}
+.image{max-width:50%;height:auto}img{vertical-align:middle}a{color:inherit}
 .table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.table-all{border:1px solid #ccc}
 .bordered tr,.table-all tr{border-bottom:1px solid #ddd}.striped tbody tr:nth-child(even){background-color:#f1f1f1}
 .table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}
@@ -60,7 +60,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
 .bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
 .main,#main{transition:margin-left .4s}
-.modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.modal{z-index:3;display:none;padding-top:50px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
 .modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
 .bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
 .bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
@@ -261,19 +261,26 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 14vw);
-    grid-gap: 1px;
+    grid-template-rows: repeat(2, 15vw);
+    gap: 5px;
+    line-height: 1;
 }
 
 .gallery-item {
 width: 100%;
+max-height: 100%;
 padding: 2px;
+padding-bottom: 35px;
 }
 
 .gallery-item img {
 width: 100%;
 height: 100%;
 object-fit: cover;
+}
+
+figcaption {
+  text-align: center;
 }
 
 /* End gallery */
@@ -545,3 +552,168 @@ z-index: 1;
   display: none;
 } 
 /* End Snow Effect */
+
+/* Modal Gallery */
+
+.gallery-modal-container {
+  padding: var(--gutter) 0;
+  display: grid;
+  gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 1fr var(--gutter);
+  align-content: start;
+  width: 100%;
+  max-height: 100vh;
+
+
+
+  z-index:3;
+  display:none;
+  padding-top:50px;
+  position:fixed;
+  left:0;
+  top:0;
+  height:100%;
+  /* overflow:auto; */
+  background-color:rgb(0,0,0);
+  background-color:rgba(0,0,0,0.4);
+}
+
+.gallery-modal-container > * {
+
+  grid-column: 2 / -2;
+}
+
+.gallery-modal-container > .galery-modal-full {
+  grid-column: 1 / -1;
+}
+
+.gallery-modal-container > .gallery-modal-ul {
+  grid-column: 1 / -1;
+}
+
+.gallery-modal-header {
+  justify-self: end;
+  height: min-content;
+}
+
+.gallery-modal-main {
+  justify-self: center; 
+  align-self: start; 
+  margin-bottom: 20px;
+  /* max-width: 45%; */
+  /* height: auto; */
+  vertical-align: middle;
+  align-self: center;
+  width: 100%;
+  max-height: 50vh;
+  object-fit: contain;
+}
+
+.gallery-modal-main > img {
+  /* max-width: 45%; */
+  /* height: auto; */
+  vertical-align: middle;
+  align-self: center;
+  /* width: 100%; */
+  /* max-height: 70vh; */
+  object-fit: contain;
+
+}
+
+.gallery-modal-caption{
+  justify-self: center;
+  height: min-content;
+  margin-bottom: 20px;     
+}
+
+
+ :root {
+  --gutter: 0px;
+}
+
+.gallery-modal-hs {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 10px;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(25% - var(--gutter) * 2);
+  grid-template-rows: minmax(15vh, 1fr);
+  position: absolute;
+  overflow-x: scroll;
+  scroll-snap-type: x proximity;
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+  max-height: 18vh; 
+}
+
+.gallery-modal-hs:before,
+.gallery-modal-hs:after {
+  content: '';
+  /* width: 10px; */
+}
+
+.gallery-modal-ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Next & previous buttons */
+.slideLeft,
+.slideRight {
+  cursor: pointer;
+  position:fixed;
+  /* top: 72%; */
+  width: auto;
+  padding: 16px;
+  margin-top: 35px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 3;
+}
+
+/* Position the "next button" to the right */
+.slideRight {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideLeft:hover,
+.slideRight:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.scroll-hide ul::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide ul{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.gallery-modal-hs > li, .gallery-modal-item > img {
+  scroll-snap-align: center;
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border-radius: 8px; */
+
+  width: 100%;
+  height: 98%;
+  object-fit: cover;
+
+} 
+
+
+/* .gallery-modal-container * {
+border: 1px solid red;
+} */
+/* End Modal Gallery */

@@ -17,13 +17,14 @@
 body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2vw,1.1em);color:#777;line-height:1.8}
 .hpot{display:none}
 .span-logo{font-size:2vw!important}
-.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6{background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}
+.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7{background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover}
 .bgimg-1{background-image:url('./images/background-images/movie-night-background.jpg');width:100vw;height:100vh}
 .bgimg-2{background-image:url("./images/background-images/halloween-background.jpg");min-height:200px}
 .bgimg-3{background-image:url("./images/background-images/dinosaur-background.jpg");min-height:200px}
-.bgimg-4{background-image:url("./images/background-images/sweet-tooth-background.jpg");min-height:200px}
+.bgimg-4{background-image:url("./images/background-images/christmas-background.jpg");min-height:200px}
 .bgimg-5{background-image:url("./images/background-images/sweet-tooth-background.jpg");min-height:200px}
 .bgimg-6{background-image:url("./images/background-images/sweet-tooth-background.jpg");min-height:200px}
+.bgimg-7{background-image:url("./images/background-images/sweet-tooth-background.jpg");min-height:200px}
 .hover-opacity{cursor:pointer}
 #myNavbar{background-color:#fff;color:#000;position:fixed;top:-50px;width:100%;transition:top .3s;z-index:5;box-shadow:0 2px 5px 0 rgb(0 0 0/16%),0 2px 10px 0 rgb(0 0 0/12%)}
 .topnav a{float:left;display:block;text-align:center;text-decoration:none;padding:8px 16px;width:auto;border:none;outline:0;border:none;overflow:hidden;cursor:pointer;white-space:nowrap;background-color:#000!important;opacity:.85;background-color:#fff!important;font-size:15px}
@@ -31,8 +32,8 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
 .topnav a.active{color:#000}
 .topnav .icon{display:none}
 @media screen and (max-width:896px){.topnav a:not(:first-child){display:none}.topnav a.icon{float:right;display:block}}
-@media screen and (max-width:896px){.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6{background-attachment:scroll;min-height:200px}.span-logo{font-size:3.5vw!important}.topnav.responsive.show{position:relative;display:block!important;width:100%}.topnav.responsive .icon{position:absolute;right:0;top:0;z-index:5}.topnav.responsive a{float:none;display:block;text-align:left;color:#000}.hide-small{display:none!important}#home>div>span.span-logo-title{white-space:nowrap;float:left!important;padding:12px 24px!important;color:#fff!important;background-color:#000!important;font-size:3vw!important;letter-spacing:4px;animation:opac .8s}@keyframes opac{from{opacity:0}to{opacity:1}}#middle-input-box{margin-top:0;font:inherit;padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}}
-@media screen and (max-width:600px){#middle-input-box{margin-top:5px;font:inherit;padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}#bookinginquiries>div>ul>li:nth-child(3)>a{font-size:12px!important}#showblock:not(:checked)+#slideout{left:250px}#slideout_inner{width:250px}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(5,25vw);grid-gap:1px}}@media screen and (max-width:1024px){.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6{background-attachment:scroll;min-height:200px}}
+@media screen and (max-width:896px){.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6,.bgimg-7{background-attachment:scroll;min-height:200px}.span-logo{font-size:3.5vw!important}.topnav.responsive.show{position:relative;display:block!important;width:100%}.topnav.responsive .icon{position:absolute;right:0;top:0;z-index:5}.topnav.responsive a{float:none;display:block;text-align:left;color:#000}.hide-small{display:none!important}#home>div>span.span-logo-title{white-space:nowrap;float:left!important;padding:12px 24px!important;color:#fff!important;background-color:#000!important;font-size:3vw!important;letter-spacing:4px;animation:opac .8s}@keyframes opac{from{opacity:0}to{opacity:1}}#middle-input-box{margin-top:0;font:inherit;padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}}
+@media screen and (max-width:600px){#middle-input-box{margin-top:5px;font:inherit;padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}#bookinginquiries>div>ul>li:nth-child(3)>a{font-size:12px!important}#showblock:not(:checked)+#slideout{left:250px}#slideout_inner{width:250px}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,25vw);grid-gap:1px}}@media screen and (max-width:1024px){.bgimg-1,.bgimg-2,.bgimg-3,.bgimg-4,.bgimg-5,.bgimg-6{background-attachment:scroll;min-height:200px}}
 
 </style>
   <body>
@@ -42,6 +43,7 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
           <a href="#about" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-user hide-small margin-right-navbar" aria-hidden="true"></i> ABOUT</a>
           <a href="#howitworks" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-expand-alt hide-small margin-right-navbar" aria-hidden="true"></i> HOW IT WORKS</a>
           <a href="#faq" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-question-circle hide-small margin-right-navbar" aria-hidden="true"></i> FAQ</a>
+          <a href="#pricing" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-dollar-sign hide-small margin-right-navbar" aria-hidden="true"></i> PRICING</a>
           <a href="#themes" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-th hide-small margin-right-navbar" aria-hidden="true"></i> THEMES</a>
           <a href="#service-area" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-map-marker-alt hide-small margin-right-navbar" aria-hidden="true"></i> SERVICE AREA</a>
           <a href="#bookinginquiries" class="hover-black" onclick="hamburgerMenu()"><i class="fas fa-envelope hide-small margin-right-navbar" aria-hidden="true"></i> BOOKING INQUIRIES</a>
@@ -209,8 +211,23 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       <br>
     </div>
 
-    <!-- Fourth Parallax Image with Themes Text -->
-    <div class="bgimg-4 display-container opacity-min" id="themes">
+    <!-- Fourth Parallax Image with Pricing Text -->
+    <div class="bgimg-4 display-container opacity-min" id="pricing">
+      <div class="display-middle" style="white-space:nowrap;">
+        <span class="left padding-large black animate-opacity span-logo wide">PRICING</span>
+      </div>
+    </div>
+    <!-- Container (Pricing Section) -->
+    <div class="content container padding-sections" >
+      <p class="center"></p>
+          <ul class="ul-center-center">
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Teepees rent for $75/teepee</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>We carry 6 full setups of each theme available</li>
+          </ul>
+      </div>
+
+    <!-- Fifth Parallax Image with Themes Text -->
+    <div class="bgimg-5 display-container opacity-min" id="themes">
       <div class="display-middle" style="white-space:nowrap;">
         <span class="left padding-large black animate-opacity span-logo wide">THEMES</span>
       </div>
@@ -218,70 +235,31 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
 
     <!-- Container (Themes Section) -->
     <div class="content container padding-sections" >
-      <p class="center" style="margin-bottom:0px;"><em>Below are some of our current themes<br> Click on the images to make them bigger</em></p><br>
+      <p class="center" style="margin-bottom:0px;"><em>Below are some of our current themes<br> Click the images to view their gallery</em></p><br>
 
       <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="/images/themes/dinosaur/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/dinosaur/dinosaur-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/dinosaur/dinosaur-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/dinosaur/dinosaur-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/halloween/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/halloween/halloween-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/halloween/halloween-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/halloween/halloween-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" />
+          <figcaption >Dinosaur</figcaption>          
         </div>
         <div class="gallery-item">
           <img src="/images/themes/movienight/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/movienight/movie-night-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/movienight/movie-night-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/movienight/movie-night-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
+          <figcaption >Movie Night</figcaption>
         </div>
         <div class="gallery-item">
           <img src="/images/themes/sweettooth/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/sweettooth/sweet-tooth-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/sweettooth/sweet-tooth-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/sweettooth/sweet-tooth-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
+          <figcaption >Sweet Tooth</figcaption>
         </div>
         <div class="gallery-item">
           <img src="/images/themes/christmas/christmas.jpg" onclick="onClick(this)" class="hover-opacity" alt="Christmas Theme" />
+          <figcaption >Christmas</figcaption>
         </div>
         <div class="gallery-item">
-          <img src="/images/themes/christmas/christmas-snip1.jpg" onclick="onClick(this)" class="hover-opacity" alt="Christmas Theme" />
+          <img src="/images/themes/halloween/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" /> 
+          <figcaption >Halloween</figcaption>
         </div>
-        <div class="gallery-item">
-          <img src="/images/themes/christmas/christmas-snip2.jpg" onclick="onClick(this)" class="hover-opacity" alt="Christmas Theme" />
-        </div>
-        <div class="gallery-item">
-          <img src="/images/themes/christmas/christmas-snip3.jpg" onclick="onClick(this)" class="hover-opacity" alt="Christmas Theme" />
-        </div>
+        
       </div>
 
       <!-- *****KEEP THIS***** Load more button can be used in future -->
@@ -291,16 +269,107 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
     </div>
 
     <!-- Modal for full size images on click-->
-    <div id="modal01" class="modal black" onclick="this.style.display='none'">
-      <span class="button large black display-topright" title="Close Modal Image"><i class="fas fa-times"></i></span>
-      <div class="modal-content animate-zoom center transparent padding-24">
-        <img id="img01" class="image">
-        <p id="caption" class="opacity large"></p>
+    <div id="modal01" class="gallery-modal-container black" onclick="">
+      <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal01.style.display='none'"><i class="fas fa-times"></i></span>
+      <div class="center transparent padding-48 scroll-hide">
+        <img id="img01" class="gallery-modal-main">
+        <div id="caption01" class="gallery-modal-caption"></div>
+        <ul id="scroll-container01" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+          <a id="slideLeft" class="slideLeft" onClick="slideLeft01()">❮</a>
+          <a id="slideRight" class="slideRight" onClick="slideRight01()">❯</a>
+          <li class="gallery-modal-item"><img src="/images/themes/dinosaur/dinosaur.jpg" onclick="change(this.src)" class="hover-opacity" alt="Dinosaur Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/dinosaur/dinosaur-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Dinosaur Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/dinosaur/dinosaur-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Dinosaur Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/dinosaur/dinosaur-snip3.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Dinosaur Theme" /></li>
+        </ul>
       </div>
     </div>
 
-    <!-- Fifth Parallax Image with Service Area Text -->
-    <div class="bgimg-5 display-container opacity-min" id="service-area">
+    <div id="modal02" class="gallery-modal-container black" onclick="">
+      <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal02.style.display='none'"><i class="fas fa-times"></i></span>
+      <div class="center transparent padding-48 scroll-hide">
+        <img id="img02" class="gallery-modal-main">
+        <div id="caption02" class="gallery-modal-caption"></div>
+        <ul id="scroll-container02" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+          <a id="slideLeft" class="slideLeft" onClick="slideLeft02()">❮</a>
+          <a id="slideRight" class="slideRight" onClick="slideRight02()">❯</a>
+          <li class="gallery-modal-item"><img src="/images/themes/movienight/movie-night.jpg" onclick="change(this.src)" class="hover-opacity" alt="Movie Night Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/movienight/movie-night-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Movie Night Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/movienight/movie-night-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Movie Night Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/movienight/movie-night-snip3.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Movie Night Theme" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal03" class="gallery-modal-container black" onclick="">
+      <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal03.style.display='none'"><i class="fas fa-times"></i></span>
+      <div class="center transparent padding-48 scroll-hide">
+        <img id="img03" class="gallery-modal-main">
+        <div id="caption03" class="gallery-modal-caption"></div>
+        <ul id="scroll-container03" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+          <a id="slideLeft" class="slideLeft" onClick="slideLeft03()">❮</a>
+          <a id="slideRight" class="slideRight"onClick="slideRight03()">❯</a>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth.jpg" onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip3.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip4.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip5.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip6.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip7.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip8.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip9.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip10.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/sweettooth/sweet-tooth-snip11.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Sweet Tooth Theme" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal04" class="gallery-modal-container black" onclick="">
+      <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal04.style.display='none'"><i class="fas fa-times"></i></span>
+      <div class="center transparent padding-48 scroll-hide">
+        <img id="img04" class="gallery-modal-main">
+        <div id="caption04" class="gallery-modal-caption"></div>
+        <ul id="scroll-container04" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+          <a id="slideLeft" class="slideLeft" onClick="slideLeft04()">❮</a>
+          <a id="slideRight" class="slideRight" onClick="slideRight04()">❯</a>
+          <li class="gallery-modal-item"><img src="/images/themes/christmas/christmas.jpg" onclick="change(this.src)" class="hover-opacity" alt="Christmas Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/christmas/christmas-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Christmas Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/christmas/christmas-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Christmas Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/christmas/christmas-snip3.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Christmas Theme" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="modal05" class="gallery-modal-container black" onclick="">
+      <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal05.style.display='none'"><i class="fas fa-times"></i></span>
+      <div class="center transparent padding-48">
+        <img id="img05" class="gallery-modal-main">
+        <div id="caption05" class="gallery-modal-caption"></div>
+        <ul id="scroll-container05" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+          <a id="slideLeft" class="slideLeft" onClick="slideLeft05()">❮</a>
+          <a id="slideRight" class="slideRight" onClick="slideRight05()">❯</a>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween.jpg" onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip3.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip4.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip5.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip6.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip7.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip8.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip9.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip10.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip11.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip12.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip13.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/halloween/halloween-snip14.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Halloween Theme" /></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Sixth Parallax Image with Service Area Text -->
+    <div class="bgimg-6 display-container opacity-min" id="service-area">
       <div class="display-middle" style="white-space:nowrap;">
         <span class="left padding-large black animate-opacity span-logo wide">SERVICE AREA</span>
       </div>
@@ -320,8 +389,8 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
           </ul>
     </div>
 
-    <!-- Sixth Parallax Image with Booking Inquiries Text -->
-    <div class="bgimg-6 display-container opacity-min" id="bookinginquiries">
+    <!-- Seventh Parallax Image with Booking Inquiries Text -->
+    <div class="bgimg-7 display-container opacity-min" id="bookinginquiries">
       <div class="display-middle" style="white-space:nowrap;">
         <span class="left padding-large black animate-opacity span-logo wide">BOOKING INQUIRIES</span>
       </div>
@@ -367,18 +436,98 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
         <a href="https://www.pinterest.ca/thelittleslumberpartyco/" rel="noopener"><i class="fab fa-pinterest-square hover-opacity"></i></a>
       </div>
       <p style="text-align: center;">        
-        <small>&copy; 2020-present The Little Slumber Party Co. All Rights Reserved.</small>
+        <small>&copy; 2021-present The Little Slumber Party Co. All Rights Reserved.</small>
       </p>
     </footer>
     
     <script>
 //#region Modal Image Gallery
-      function onClick(element) {
-        document.getElementById("img01").src = element.src;
-        document.getElementById("modal01").style.display = "block";
-        var captionText = document.getElementById("caption");
-        captionText.innerHTML = element.alt;
-      }
+    function onClick(element) {
+      let elementSrc = element.src;
+        if (elementSrc.indexOf("dinosaur") > -1) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption01");
+            captionText.innerHTML = element.alt;
+        } 
+        if (elementSrc.indexOf("movie-night") > -1){
+            document.getElementById("img02").src = element.src;
+            document.getElementById("modal02").style.display = "block";
+            var captionText = document.getElementById("caption02");
+            captionText.innerHTML = element.alt;
+        } 
+        if (elementSrc.indexOf("sweet-tooth") > -1){
+            document.getElementById("img03").src = element.src;
+            document.getElementById("modal03").style.display = "block";
+            var captionText = document.getElementById("caption03");
+            captionText.innerHTML = element.alt;
+        }
+        if (elementSrc.indexOf("christmas") > -1){
+            document.getElementById("img04").src = element.src;
+            document.getElementById("modal04").style.display = "block";
+            var captionText = document.getElementById("caption04");
+            captionText.innerHTML = element.alt;
+        }
+        if (elementSrc.indexOf("halloween") > -1){
+            document.getElementById("img05").src = element.src;
+            document.getElementById("modal05").style.display = "block";
+            var captionText = document.getElementById("caption05");
+            captionText.innerHTML = element.alt;
+        }
+    }
+
+    const change = src => {
+      let mainSrc = src;
+        if (mainSrc.indexOf("dinosaur") > -1){
+            document.getElementById('img01').src = src;
+          }
+        if (mainSrc.indexOf("movie-night") > -1){
+          document.getElementById('img02').src = src;
+        }
+        if (mainSrc.indexOf("sweet-tooth") > -1){
+          document.getElementById('img03').src = src;
+        }
+        if (mainSrc.indexOf("christmas") > -1){
+          document.getElementById('img04').src = src;
+        }
+        if (mainSrc.indexOf("halloween") > -1){
+          document.getElementById('img05').src = src;
+        }
+      } 
+//#endregion
+
+//#region modal scrolling function
+    function slideRight01() {
+      document.getElementById("scroll-container01").scrollBy({ left: 250, behavior: 'smooth'});
+    }
+    function slideLeft01(){
+      document.getElementById("scroll-container01").scrollBy({ left: -250, behavior: 'smooth'});
+    }
+
+    function slideRight02() {
+      document.getElementById("scroll-container02").scrollBy({ left: 250, behavior: 'smooth'});
+    }
+    function slideLeft02(){
+      document.getElementById("scroll-container02").scrollBy({ left: -250, behavior: 'smooth'});
+    }
+    function slideRight03() {
+      document.getElementById("scroll-container03").scrollBy({ left: 250, behavior: 'smooth'});
+    }
+    function slideLeft03(){
+      document.getElementById("scroll-container03").scrollBy({ left: -250, behavior: 'smooth'});
+    }
+    function slideRight04() {
+      document.getElementById("scroll-container04").scrollBy({ left: 250, behavior: 'smooth'});
+    }
+    function slideLeft04(){
+      document.getElementById("scroll-container04").scrollBy({ left: -250, behavior: 'smooth'});
+    }
+    function slideRight05() {
+      document.getElementById("scroll-container05").scrollBy({ left: 250, behavior: 'smooth'});
+    }
+    function slideLeft05(){
+      document.getElementById("scroll-container05").scrollBy({ left: -250, behavior: 'smooth'});
+    }
 //#endregion
 
 //#region mouse scrolling functions
