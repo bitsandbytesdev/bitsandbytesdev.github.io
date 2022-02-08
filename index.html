@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="icon" href="/images/logo/logo_dark_favicon.ico">
   <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
       new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -232,15 +233,37 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
         <span class="left padding-large black animate-opacity span-logo wide">PRICING</span>
       </div>
     </div>
-    <!-- Container (Pricing Section) -->
+    <!-- Container (Pricing\Addons Section) -->
     <div class="content container padding-sections" >
-      <p class="center"></p>
+      <!-- <p class="center"></p> -->
           <ul class="ul-center-center">
             <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Teepees rent for $75/teepee</li>
             <li><i class="far fa-check-circle fa-fw hover-text-black"></i>We carry 6 full setups of each theme available</li>
             <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Book the second night for $10/teepee</li> 
           </ul>
+      <div class="center">
+        <b class="xlarge">Awesome Add-Ons</b><br>
       </div>
+      <div class="gallery-grid-addons">
+        <div class="gallery-item-addons">
+          <img src="/images/addons/sweets_basket.jpg" alt="Sweets Basket" />
+          <figcaption>Sweets Basket<br><br>$25.00</figcaption>          
+        </div>
+        <div class="gallery-item-addons">
+          <img src="/images/addons/personalized_pillowcase.jpg" alt="Personalized Pillow Cases" />
+          <figcaption>Personalized Pillowcases<br><br>$50.00</figcaption>          
+        </div>
+        <div class="gallery-item-addons">
+          <img src="/images/addons/personalized_cups.jpg" alt="Personalized Cups" />
+          <figcaption>Personalized Cups<br><br>$20.00</figcaption>          
+        </div>
+        <div class="gallery-item-addons">
+          <img src="/images/addons/mini_spa_package.jpg" alt="Spare" />
+          <figcaption>Mini Spa Package<br><br>$50.00</figcaption>          
+        </div>        
+      </div>
+          
+    </div>
 
     <!-- Fifth Parallax Image with Themes Text -->
     <div class="bgimg-5 display-container opacity-min" id="themes">
@@ -257,23 +280,23 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       <div class="gallery-grid">
         <div class="gallery-item">
           <img src="/images/themes/dinosaur/dinosaur.jpg" onclick="onClick(this)" class="hover-opacity" alt="Dinosaur Theme" />
-          <figcaption >Dinosaur</figcaption>          
+          <figcaption>Dinosaur</figcaption>          
         </div>
         <div class="gallery-item">
           <img src="/images/themes/movienight/movie-night.jpg" onclick="onClick(this)" class="hover-opacity" alt="Movie Night Theme" />
-          <figcaption >Movie Night</figcaption>
+          <figcaption>Movie Night</figcaption>
         </div>
         <div class="gallery-item">
           <img src="/images/themes/sweettooth/sweet-tooth.jpg" onclick="onClick(this)" class="hover-opacity" alt="Sweet Tooth Theme" />
-          <figcaption >Sweet Tooth</figcaption>
+          <figcaption>Sweet Tooth</figcaption>
         </div>
         <div class="gallery-item">
           <img src="/images/themes/christmas/christmas.jpg" onclick="onClick(this)" class="hover-opacity" alt="Christmas Theme" />
-          <figcaption >Christmas</figcaption>
+          <figcaption>Christmas</figcaption>
         </div>
         <div class="gallery-item">
           <img src="/images/themes/halloween/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" /> 
-          <figcaption >Halloween</figcaption>
+          <figcaption>Halloween</figcaption>
         </div>
         
       </div>
@@ -447,9 +470,9 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
     <footer class="center black opacity" style="padding-top:16px;padding-bottom:1px;">
       <a href="#home" class="button light-grey"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
       <div class="xlarge section">
-        <a href="https://www.facebook.com/The-Little-Slumber-Party-Co-104208258653968" rel="noopener"><i class="fab fa-facebook-square hover-opacity" ></i></a>
-        <a href="https://instagram.com/thelittleslumberpartyco" rel="noopener"><i class="fab fa-instagram hover-opacity"></i></a>
-        <a href="https://www.pinterest.ca/thelittleslumberpartyco/" rel="noopener"><i class="fab fa-pinterest-square hover-opacity"></i></a>
+        <a href="https://www.facebook.com/The-Little-Slumber-Party-Co-104208258653968" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square hover-opacity" ></i></a>
+        <a href="https://instagram.com/thelittleslumberpartyco" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram hover-opacity"></i></a>
+        <a href="https://www.pinterest.ca/thelittleslumberpartyco/" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-square hover-opacity"></i></a>
       </div>
       <p style="text-align: center;">        
         <small>&copy; 2021-present The Little Slumber Party Co. All Rights Reserved.</small>
@@ -599,135 +622,135 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
 // #endregion
 
 //#region Snow functions
-function itsChristmas()
-      {
-        var s = document.getElementById("xmas");
-        if (s.className.indexOf("xmasOn") == -1)
-        {
-          s.className = "xmasOn";
-        }
-        else
-        {
-          s.className = "xmasDefault";
-        }
-      }
+/*             function itsChristmas()
+                  {
+                    var s = document.getElementById("xmas");
+                    if (s.className.indexOf("xmasOn") == -1)
+                    {
+                      s.className = "xmasOn";
+                    }
+                    else
+                    {
+                      s.className = "xmasDefault";
+                    }
+                  }
 
-(function() {
-    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
-    function(callback) {
-        window.setTimeout(callback, 1000 / 60);
-    };
-    window.requestAnimationFrame = requestAnimationFrame;
-})();
+            (function() {
+                var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+                function(callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
+                window.requestAnimationFrame = requestAnimationFrame;
+            })();
 
 
-var flakes = [],
-    xmas = document.getElementById("xmas"),
-    ctx = xmas.getContext("2d"),
-    flakeCount = 400,
-    mX = -100,
-    mY = -100
+            var flakes = [],
+                xmas = document.getElementById("xmas"),
+                ctx = xmas.getContext("2d"),
+                flakeCount = 400,
+                mX = -100,
+                mY = -100
 
-    xmas.width = window.innerWidth;
-    xmas.height = window.innerHeight;
+                xmas.width = window.innerWidth;
+                xmas.height = window.innerHeight;
 
-function snow() {
-    ctx.clearRect(0, 0, xmas.width, xmas.height);
+            function snow() {
+                ctx.clearRect(0, 0, xmas.width, xmas.height);
 
-    for (var i = 0; i < flakeCount; i++) {
-        var flake = flakes[i],
-            x = mX,
-            y = mY,
-            minDist = 150,
-            x2 = flake.x,
-            y2 = flake.y;
+                for (var i = 0; i < flakeCount; i++) {
+                    var flake = flakes[i],
+                        x = mX,
+                        y = mY,
+                        minDist = 150,
+                        x2 = flake.x,
+                        y2 = flake.y;
 
-        var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
-            dx = x2 - x,
-            dy = y2 - y;
+                    var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+                        dx = x2 - x,
+                        dy = y2 - y;
 
-        if (dist < minDist) {
-            var force = minDist / (dist * dist),
-                xcomp = (x - x2) / dist,
-                ycomp = (y - y2) / dist,
-                deltaV = force / 2;
+                    if (dist < minDist) {
+                        var force = minDist / (dist * dist),
+                            xcomp = (x - x2) / dist,
+                            ycomp = (y - y2) / dist,
+                            deltaV = force / 2;
 
-            flake.velX -= deltaV * xcomp;
-            flake.velY -= deltaV * ycomp;
+                        flake.velX -= deltaV * xcomp;
+                        flake.velY -= deltaV * ycomp;
 
-        } else {
-            flake.velX *= .98;
-            if (flake.velY <= flake.speed) {
-                flake.velY = flake.speed
+                    } else {
+                        flake.velX *= .98;
+                        if (flake.velY <= flake.speed) {
+                            flake.velY = flake.speed
+                        }
+                        flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+                    }
+
+                    ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+                    flake.y += flake.velY;
+                    flake.x += flake.velX;
+                        
+                    if (flake.y >= xmas.height || flake.y <= 0) {
+                        reset(flake);
+                    }
+
+
+                    if (flake.x >= xmas.width || flake.x <= 0) {
+                        reset(flake);
+                    }
+
+                    ctx.beginPath();
+                    ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                requestAnimationFrame(snow);
+            };
+
+            function reset(flake) {
+                flake.x = Math.floor(Math.random() * xmas.width);
+                flake.y = 0;
+                flake.size = (Math.random() * 3) + 2;
+                flake.speed = (Math.random() * 1) + 0.5;
+                flake.velY = flake.speed;
+                flake.velX = 0;
+                flake.opacity = (Math.random() * 0.5) + 0.3;
             }
-            flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
-        }
 
-        ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
-        flake.y += flake.velY;
-        flake.x += flake.velX;
-            
-        if (flake.y >= xmas.height || flake.y <= 0) {
-            reset(flake);
-        }
+            function init() {
+                for (var i = 0; i < flakeCount; i++) {
+                    var x = Math.floor(Math.random() * xmas.width),
+                        y = Math.floor(Math.random() * xmas.height),
+                        size = (Math.random() * 3) + 2,
+                        speed = (Math.random() * 1) + 0.5,
+                        opacity = (Math.random() * 0.5) + 0.3;
 
+                    flakes.push({
+                        speed: speed,
+                        velY: speed,
+                        velX: 0,
+                        x: x,
+                        y: y,
+                        size: size,
+                        stepSize: (Math.random()) / 30,
+                        step: 0,
+                        opacity: opacity
+                    });
+                }
 
-        if (flake.x >= xmas.width || flake.x <= 0) {
-            reset(flake);
-        }
+                snow();
+            };
 
-        ctx.beginPath();
-        ctx.arc(flake.x, flake.y, flake.size, 0, Math.PI * 2);
-        ctx.fill();
-    }
-    requestAnimationFrame(snow);
-};
+            xmas.addEventListener("mousemove", function(e) {
+                mX = e.clientX,
+                mY = e.clientY
+            });
 
-function reset(flake) {
-    flake.x = Math.floor(Math.random() * xmas.width);
-    flake.y = 0;
-    flake.size = (Math.random() * 3) + 2;
-    flake.speed = (Math.random() * 1) + 0.5;
-    flake.velY = flake.speed;
-    flake.velX = 0;
-    flake.opacity = (Math.random() * 0.5) + 0.3;
-}
+            window.addEventListener("resize",function(){
+                xmas.width = window.innerWidth;
+                xmas.height = window.innerHeight;
+            })
 
-function init() {
-    for (var i = 0; i < flakeCount; i++) {
-        var x = Math.floor(Math.random() * xmas.width),
-            y = Math.floor(Math.random() * xmas.height),
-            size = (Math.random() * 3) + 2,
-            speed = (Math.random() * 1) + 0.5,
-            opacity = (Math.random() * 0.5) + 0.3;
-
-        flakes.push({
-            speed: speed,
-            velY: speed,
-            velX: 0,
-            x: x,
-            y: y,
-            size: size,
-            stepSize: (Math.random()) / 30,
-            step: 0,
-            opacity: opacity
-        });
-    }
-
-    snow();
-};
-
-xmas.addEventListener("mousemove", function(e) {
-    mX = e.clientX,
-    mY = e.clientY
-});
-
-window.addEventListener("resize",function(){
-    xmas.width = window.innerWidth;
-    xmas.height = window.innerHeight;
-})
-
-init();
+            init(); */
 // #endregion
     </script>
   </body>
