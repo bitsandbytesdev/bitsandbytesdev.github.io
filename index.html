@@ -303,6 +303,10 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
           <img src="/images/themes/easter/easter.jpg" onclick="onClick(this)" class="hover-opacity" alt="Easter Theme" /> 
           <figcaption>Easter</figcaption>
         </div>
+        <div class="gallery-item">
+          <img src="/images/themes/glowinthedark/glow-in-the-dark.jpg" onclick="onClick(this)" class="hover-opacity" alt="Glow In The Dark Theme" /> 
+          <figcaption>Glow In The Dark</figcaption>
+        </div>
         
       </div>
 
@@ -430,6 +434,21 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       </div>
     </div>
 
+      <div id="modal07" class="gallery-modal-container black" onclick="">
+        <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal07.style.display='none'"><i class="fas fa-times"></i></span>
+        <div class="center transparent padding-48">
+          <img id="img07" class="gallery-modal-main">
+          <div id="caption07" class="gallery-modal-caption"></div>
+          <ul id="scroll-container07" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+            <a id="slideLeft" class="slideLeft" onClick="slideLeft07()">❮</a>
+            <a id="slideRight" class="slideRight" onClick="slideRight07()">❯</a>
+            <li class="gallery-modal-item"><img src="/images/themes/glowinthedark/glow-in-the-dark.jpg" onclick="change(this.src)" class="hover-opacity" alt="Glow In The Dark Theme" /></li>
+            <li class="gallery-modal-item"><img src="/images/themes/glowinthedark/glow-in-the-dark-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Glow In The Dark Theme" /></li>
+            <li class="gallery-modal-item"><img src="/images/themes/glowinthedark/glow-in-the-dark-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Glow In The Dark Theme" /></li>
+          </ul>
+        </div>
+    </div>
+
     <!-- Sixth Parallax Image with Service Area Text -->
     <div class="bgimg-6 display-container opacity-min" id="service-area">
       <div class="display-middle" style="white-space:nowrap;">
@@ -542,6 +561,12 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
             var captionText = document.getElementById("caption06");
             captionText.innerHTML = element.alt;
         }
+        if (elementSrc.indexOf("glow-in-the-dark") > -1){
+            document.getElementById("img07").src = element.src;
+            document.getElementById("modal07").style.display = "block";
+            var captionText = document.getElementById("caption07");
+            captionText.innerHTML = element.alt;
+        }
     }
 
     const change = src => {
@@ -563,6 +588,9 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
         }
         if (mainSrc.indexOf("easter") > -1){
           document.getElementById('img06').src = src;
+        }
+        if (mainSrc.indexOf("glow-in-the-dark") > -1){
+          document.getElementById('img07').src = src;
         }
       } 
 //#endregion
@@ -604,6 +632,12 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
     }
     function slideLeft06(){
       document.getElementById("scroll-container06").scrollBy({ left: -300, behavior: 'smooth'});
+    }
+    function slideRight06() {
+      document.getElementById("scroll-container07").scrollBy({ left: 200, behavior: 'smooth'});
+    }
+    function slideLeft06(){
+      document.getElementById("scroll-container07").scrollBy({ left: -200, behavior: 'smooth'});
     }
 //#endregion
 
