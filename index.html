@@ -238,10 +238,11 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       <!-- <p class="center"></p> -->
           <ul class="ul-center-center">
             <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Teepees rent for $75/teepee</li>
-            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>We carry 6 full setups of each theme available</li>
+            <li><i class="far fa-check-circle fa-fw hover-text-black"></i>We carry 4 setups of all our themes and 6 for our most popular themes</li>
             <li><i class="far fa-check-circle fa-fw hover-text-black"></i>Book the second night for $10/teepee</li> 
           </ul>
-      <div class="center">
+<!-- Add ons Section uncomment when ready -->
+<!--       <div class="center">
         <b class="xlarge">Awesome Add-Ons</b><br>
       </div>
       <div class="gallery-grid-addons">
@@ -261,7 +262,7 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
           <img src="/images/addons/mini_spa_package.jpg" alt="Spare" />
           <figcaption>Mini Spa Package<br><br>$50.00</figcaption>          
         </div>        
-      </div>
+      </div> -->
           
     </div>
 
@@ -297,6 +298,10 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
         <div class="gallery-item">
           <img src="/images/themes/halloween/halloween.jpg" onclick="onClick(this)" class="hover-opacity" alt="Halloween Theme" /> 
           <figcaption>Halloween</figcaption>
+        </div>
+        <div class="gallery-item">
+          <img src="/images/themes/easter/easter.jpg" onclick="onClick(this)" class="hover-opacity" alt="Easter Theme" /> 
+          <figcaption>Easter</figcaption>
         </div>
         
       </div>
@@ -407,6 +412,24 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       </div>
     </div>
 
+    <div id="modal06" class="gallery-modal-container black" onclick="">
+      <span class="button large black display-topright gallery-modal-header" title="Close Modal Image" onClick="modal06.style.display='none'"><i class="fas fa-times"></i></span>
+      <div class="center transparent padding-48">
+        <img id="img06" class="gallery-modal-main">
+        <div id="caption06" class="gallery-modal-caption"></div>
+        <ul id="scroll-container06" class="gallery-modal-hs gallery-modal-ul galery-modal-full">
+          <a id="slideLeft" class="slideLeft" onClick="slideLeft06()">❮</a>
+          <a id="slideRight" class="slideRight" onClick="slideRight06()">❯</a>
+          <li class="gallery-modal-item"><img src="/images/themes/easter/easter.jpg" onclick="change(this.src)" class="hover-opacity" alt="Easter Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/easter/easter-snip1.jpg" onclick="change(this.src)" class="hover-opacity" alt="Easter Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/easter/easter-snip2.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Easter Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/easter/easter-snip3.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Easter Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/easter/easter-snip4.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Easter Theme" /></li>
+          <li class="gallery-modal-item"><img src="/images/themes/easter/easter-snip5.jpg"  onclick="change(this.src)" class="hover-opacity" alt="Easter Theme" /></li>
+        </ul>
+      </div>
+    </div>
+
     <!-- Sixth Parallax Image with Service Area Text -->
     <div class="bgimg-6 display-container opacity-min" id="service-area">
       <div class="display-middle" style="white-space:nowrap;">
@@ -513,6 +536,12 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
             var captionText = document.getElementById("caption05");
             captionText.innerHTML = element.alt;
         }
+        if (elementSrc.indexOf("easter") > -1){
+            document.getElementById("img06").src = element.src;
+            document.getElementById("modal06").style.display = "block";
+            var captionText = document.getElementById("caption06");
+            captionText.innerHTML = element.alt;
+        }
     }
 
     const change = src => {
@@ -532,6 +561,9 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
         if (mainSrc.indexOf("halloween") > -1){
           document.getElementById('img05').src = src;
         }
+        if (mainSrc.indexOf("easter") > -1){
+          document.getElementById('img06').src = src;
+        }
       } 
 //#endregion
 
@@ -550,10 +582,10 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       document.getElementById("scroll-container02").scrollBy({ left: -250, behavior: 'smooth'});
     }
     function slideRight03() {
-      document.getElementById("scroll-container03").scrollBy({ left: 250, behavior: 'smooth'});
+      document.getElementById("scroll-container03").scrollBy({ left: 300, behavior: 'smooth'});
     }
     function slideLeft03(){
-      document.getElementById("scroll-container03").scrollBy({ left: -250, behavior: 'smooth'});
+      document.getElementById("scroll-container03").scrollBy({ left: -300, behavior: 'smooth'});
     }
     function slideRight04() {
       document.getElementById("scroll-container04").scrollBy({ left: 250, behavior: 'smooth'});
@@ -562,10 +594,16 @@ body,h1,h2,h3,h4,h5,h6{font-family:"Lato",sans-serif;font-size:clamp(1em,1em + 2
       document.getElementById("scroll-container04").scrollBy({ left: -250, behavior: 'smooth'});
     }
     function slideRight05() {
-      document.getElementById("scroll-container05").scrollBy({ left: 250, behavior: 'smooth'});
+      document.getElementById("scroll-container05").scrollBy({ left: 300, behavior: 'smooth'});
     }
     function slideLeft05(){
-      document.getElementById("scroll-container05").scrollBy({ left: -250, behavior: 'smooth'});
+      document.getElementById("scroll-container05").scrollBy({ left: -300, behavior: 'smooth'});
+    }
+    function slideRight06() {
+      document.getElementById("scroll-container06").scrollBy({ left: 300, behavior: 'smooth'});
+    }
+    function slideLeft06(){
+      document.getElementById("scroll-container06").scrollBy({ left: -300, behavior: 'smooth'});
     }
 //#endregion
 
